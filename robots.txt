@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /assets/
+Disallow: /*.php$
+
+# Legal pages — allow
+Allow: /privacy-policy
+Allow: /terms-and-conditions
+Allow: /cookie-policy
+
+Sitemap: https://demandrise.site/sitemap.xml

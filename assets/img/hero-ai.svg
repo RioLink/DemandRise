@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600">
+<defs>
+  <radialGradient id="glow" cx="50%" cy="48%" r="45%">
+    <stop offset="0%" style="stop-color:#B8864E;stop-opacity:0.22"/>
+    <stop offset="100%" style="stop-color:#B8864E;stop-opacity:0"/>
+  </radialGradient>
+  <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#2C2318;stop-opacity:1"/>
+    <stop offset="100%" style="stop-color:#1A1714;stop-opacity:1"/>
+  </linearGradient>
+  <linearGradient id="barH" x1="0%" y1="100%" x2="0%" y2="0%">
+    <stop offset="0%" style="stop-color:#8B5E2A"/>
+    <stop offset="100%" style="stop-color:#D4A76A"/>
+  </linearGradient>
+</defs>
+
+<!-- Background -->
+<rect width="480" height="600" fill="rgba(26,23,20,0)"/>
+
+<!-- Glow -->
+<ellipse cx="240" cy="300" rx="200" ry="200" fill="url(#glow)"/>
+
+<!-- Main card -->
+<rect x="40" y="60" width="400" height="480" rx="24" fill="url(#cardBg)" stroke="rgba(184,134,78,0.2)" stroke-width="1.5"/>
+
+<!-- Card header -->
+<rect x="40" y="60" width="400" height="56" rx="24" fill="rgba(184,134,78,0.08)"/>
+<rect x="40" y="92" width="400" height="24" fill="rgba(184,134,78,0.04)"/>
+<circle cx="72" cy="88" r="8" fill="rgba(184,134,78,0.4)"/>
+<circle cx="96" cy="88" r="8" fill="rgba(184,134,78,0.2)"/>
+<circle cx="120" cy="88" r="8" fill="rgba(184,134,78,0.12)"/>
+<text x="168" y="93" font-family="monospace" font-size="11" fill="rgba(247,244,239,0.35)" letter-spacing="1">DemandRise · AI Dashboard</text>
+
+<!-- Metric cards row -->
+<rect x="64" y="136" width="108" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(184,134,78,0.2)" stroke-width="1"/>
+<text x="118" y="162" font-family="monospace" font-size="9" fill="rgba(212,167,106,0.6)" text-anchor="middle" letter-spacing="1">КОНВЕРСІЯ</text>
+<text x="118" y="188" font-family="Georgia,serif" font-size="24" fill="#D4A76A" text-anchor="middle">+68%</text>
+
+<rect x="188" y="136" width="108" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(184,134,78,0.2)" stroke-width="1"/>
+<text x="242" y="162" font-family="monospace" font-size="9" fill="rgba(212,167,106,0.6)" text-anchor="middle" letter-spacing="1">ЗАЯВКИ/ДН.</text>
+<text x="242" y="188" font-family="Georgia,serif" font-size="24" fill="#D4A76A" text-anchor="middle">24/7</text>
+
+<rect x="312" y="136" width="108" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(184,134,78,0.2)" stroke-width="1"/>
+<text x="366" y="162" font-family="monospace" font-size="9" fill="rgba(212,167,106,0.6)" text-anchor="middle" letter-spacing="1">ROI</text>
+<text x="366" y="188" font-family="Georgia,serif" font-size="24" fill="#D4A76A" text-anchor="middle">×4.2</text>
+
+<!-- Chart area -->
+<rect x="64" y="228" width="356" height="160" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+<text x="82" y="250" font-family="monospace" font-size="9" fill="rgba(212,167,106,0.55)" letter-spacing="1.5">РІСТ ПРОДАЖІВ ЗА 6 МІСЯЦІВ</text>
+<!-- mini bars -->
+<rect x="82" y="330" width="30" height="40" rx="4" fill="rgba(184,134,78,0.25)"/>
+<rect x="124" y="315" width="30" height="55" rx="4" fill="rgba(184,134,78,0.32)"/>
+<rect x="166" y="295" width="30" height="75" rx="4" fill="rgba(184,134,78,0.42)"/>
+<rect x="208" y="272" width="30" height="98" rx="4" fill="rgba(184,134,78,0.55)"/>
+<rect x="250" y="255" width="30" height="115" rx="4" fill="url(#barH)" opacity="0.8"/>
+<rect x="292" y="268" width="30" height="102" rx="4" fill="url(#barH)"/>
+<rect x="334" y="258" width="30" height="112" rx="4" fill="url(#barH)"/>
+<line x1="82" y1="374" x2="376" y2="374" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+<!-- trend arrow -->
+<polyline points="82,330 124,315 166,295 208,272 250,255 292,268 334,258" fill="none" stroke="rgba(212,167,106,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- AI flow nodes -->
+<rect x="64" y="408" width="356" height="112" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+<text x="82" y="430" font-family="monospace" font-size="9" fill="rgba(212,167,106,0.55)" letter-spacing="1.5">AI ВОРОНКА АВТОМАТИЗАЦІЇ</text>
+<!-- nodes -->
+<circle cx="110" cy="468" r="22" fill="rgba(184,134,78,0.15)" stroke="rgba(184,134,78,0.45)" stroke-width="1.5"/>
+<text x="110" y="473" font-family="monospace" font-size="8" fill="rgba(212,167,106,0.85)" text-anchor="middle">CRM</text>
+<line x1="133" y1="468" x2="167" y2="468" stroke="rgba(184,134,78,0.4)" stroke-width="1.5" stroke-dasharray="4,3"/>
+<circle cx="190" cy="468" r="22" fill="rgba(184,134,78,0.15)" stroke="rgba(184,134,78,0.45)" stroke-width="1.5"/>
+<text x="190" y="473" font-family="monospace" font-size="8" fill="rgba(212,167,106,0.85)" text-anchor="middle">BOT</text>
+<line x1="213" y1="468" x2="247" y2="468" stroke="rgba(184,134,78,0.4)" stroke-width="1.5" stroke-dasharray="4,3"/>
+<circle cx="270" cy="468" r="22" fill="rgba(184,134,78,0.15)" stroke="rgba(184,134,78,0.45)" stroke-width="1.5"/>
+<text x="270" y="473" font-family="monospace" font-size="8" fill="rgba(212,167,106,0.85)" text-anchor="middle">EMAIL</text>
+<line x1="293" y1="468" x2="327" y2="468" stroke="rgba(184,134,78,0.4)" stroke-width="1.5" stroke-dasharray="4,3"/>
+<circle cx="350" cy="468" r="22" fill="rgba(184,134,78,0.25)" stroke="#D4A76A" stroke-width="1.5"/>
+<text x="350" y="473" font-family="monospace" font-size="8" fill="#D4A76A" text-anchor="middle">SALE</text>
+<!-- pulse circle on last node -->
+<circle cx="350" cy="468" r="30" fill="none" stroke="rgba(212,167,106,0.2)" stroke-width="1">
+  <animate attributeName="r" values="22;35;22" dur="3s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0;0.4" dur="3s" repeatCount="indefinite"/>
+</circle>
+</svg>

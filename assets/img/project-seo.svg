@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+<defs>
+  <linearGradient id="bgSEO" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#1A1714"/>
+    <stop offset="100%" style="stop-color:#221A12"/>
+  </linearGradient>
+  <linearGradient id="lineG" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#B8864E;stop-opacity:0.3"/>
+    <stop offset="100%" style="stop-color:#D4A76A;stop-opacity:1"/>
+  </linearGradient>
+</defs>
+<rect width="640" height="420" fill="url(#bgSEO)"/>
+<!-- Browser mockup -->
+<rect x="60" y="40" width="520" height="290" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+<rect x="60" y="40" width="520" height="36" rx="12" fill="rgba(255,255,255,0.06)"/>
+<rect x="60" y="64" width="520" height="12" fill="rgba(255,255,255,0.04)"/>
+<!-- Browser dots -->
+<circle cx="84" cy="58" r="5" fill="rgba(255,80,80,0.5)"/>
+<circle cx="102" cy="58" r="5" fill="rgba(255,180,0,0.4)"/>
+<circle cx="120" cy="58" r="5" fill="rgba(80,200,80,0.4)"/>
+<!-- URL bar -->
+<rect x="145" y="50" width="300" height="16" rx="8" fill="rgba(255,255,255,0.07)"/>
+<text x="295" y="61" font-family="monospace" font-size="9" fill="rgba(247,244,239,0.4)" text-anchor="middle">google.com/search?q=dataflow+it</text>
+<!-- Search result rows -->
+<rect x="85" y="90" width="18" height="18" rx="3" fill="rgba(212,167,106,0.25)"/>
+<text x="85" y="103" font-family="monospace" font-size="10" fill="rgba(212,167,106,0.7)">1</text>
+<text x="116" y="100" font-family="Georgia,serif" font-size="13" fill="rgba(247,244,239,0.9)">DataFlow IT — Розробка та автоматизація</text>
+<text x="116" y="114" font-family="monospace" font-size="9" fill="rgba(80,180,80,0.7)">dataflow.com.ua › послуги</text>
+
+<rect x="85" y="128" width="18" height="18" rx="3" fill="rgba(184,134,78,0.15)"/>
+<text x="85" y="141" font-family="monospace" font-size="10" fill="rgba(184,134,78,0.5)">2</text>
+<text x="116" y="138" font-family="Georgia,serif" font-size="13" fill="rgba(247,244,239,0.55)">IT-рішення для бізнесу — competitor.com</text>
+<text x="116" y="152" font-family="monospace" font-size="9" fill="rgba(100,150,100,0.4)">competitor.com › it</text>
+
+<rect x="85" y="166" width="18" height="18" rx="3" fill="rgba(184,134,78,0.1)"/>
+<text x="85" y="179" font-family="monospace" font-size="10" fill="rgba(184,134,78,0.35)">3</text>
+<text x="116" y="176" font-family="Georgia,serif" font-size="13" fill="rgba(247,244,239,0.35)">Розробка ПЗ — itcompany.ua</text>
+<text x="116" y="190" font-family="monospace" font-size="9" fill="rgba(100,150,100,0.3)">itcompany.ua</text>
+
+<!-- Separator -->
+<line x1="85" y1="210" x2="555" y2="210" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+<!-- Traffic graph mini -->
+<text x="116" y="230" font-family="monospace" font-size="9" fill="rgba(212,167,106,0.5)" letter-spacing="1">ОРГАНІЧНИЙ ТРАФІК</text>
+<polyline points="116,270 185,260 255,248 325,230 395,210 465,188 535,165" fill="none" stroke="url(#lineG)" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="535" cy="165" r="5" fill="#D4A76A" stroke="rgba(212,167,106,0.35)" stroke-width="3"/>
+<!-- Traffic labels -->
+<text x="116" y="290" font-family="monospace" font-size="9" fill="rgba(247,244,239,0.25)">Міс 1</text>
+<text x="248" y="290" font-family="monospace" font-size="9" fill="rgba(247,244,239,0.25)">Міс 3</text>
+<text x="390" y="290" font-family="monospace" font-size="9" fill="rgba(247,244,239,0.25)">Міс 5</text>
+<text x="512" y="290" font-family="monospace" font-size="9" fill="rgba(212,167,106,0.7)">×4</text>
+
+<!-- Badge -->
+<rect x="400" y="50" width="148" height="52" rx="10" fill="rgba(184,134,78,0.14)" stroke="rgba(184,134,78,0.42)" stroke-width="1"/>
+<text x="416" y="70" font-family="monospace" font-size="10" fill="rgba(212,167,106,0.7)" letter-spacing="1">ТОП-3 GOOGLE</text>
+<text x="416" y="91" font-family="Georgia,serif" font-size="20" fill="#D4A76A">×4 трафіку</text>
+
+<!-- Labels -->
+<text x="80" y="368" font-family="Georgia,serif" font-size="24" fill="rgba(247,244,239,0.92)">IT-компанія «DataFlow»</text>
+<text x="80" y="393" font-family="monospace" font-size="11" fill="rgba(184,134,78,0.85)" letter-spacing="1.5">SEO · ×4 ТРАФІКУ · ТОП-3 GOOGLE</text>
+</svg>

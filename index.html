@@ -1,0 +1,543 @@
+﻿<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>DemandRise — AI-агенція автоматизації та просування бізнесу</title>
+  <meta name="description" content="DemandRise — автоматизуємо бізнес-процеси за допомогою AI, просуваємо сайти, бренди та Instagram-акаунти. Результат вимірюється цифрами."/>
+  <meta property="og:title" content="DemandRise — AI-агенція автоматизації та просування"/>
+  <meta property="og:description" content="Автоматизуємо, просуваємо, масштабуємо. AI-рішення для вашого бізнесу."/>
+  <meta property="og:type" content="website"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <style>
+    /* ── Diagnostic Block ── */
+    .diag-section{
+      background:var(--ivory);
+      padding:88px 0 64px;
+      position:relative;
+      overflow:hidden;
+    }
+    /* dot-grid background pattern */
+    .diag-section::after{
+      content:'';position:absolute;inset:0;
+      background-image:radial-gradient(circle,rgba(184,134,78,.22) 1.5px,transparent 1.5px);
+      background-size:32px 32px;
+      pointer-events:none;
+      mask-image:radial-gradient(ellipse 85% 85% at 50% 50%,#000 30%,transparent 100%);
+      -webkit-mask-image:radial-gradient(ellipse 85% 85% at 50% 50%,#000 30%,transparent 100%);
+    }
+    /* decorative arc top-right */
+    .diag-section::before{
+      content:'';position:absolute;top:-180px;right:-180px;
+      width:480px;height:480px;border-radius:50%;
+      border:1.5px solid rgba(184,134,78,.18);
+      pointer-events:none;
+    }
+    .diag-bg-arc2{
+      position:absolute;bottom:-120px;left:-120px;
+      width:360px;height:360px;border-radius:50%;
+      border:1.5px solid rgba(140,168,130,.15);
+      pointer-events:none;
+    }
+    .diag-heading{text-align:center;margin-bottom:36px;position:relative;z-index:1}
+    .diag-heading h2{font-family:var(--font-display);font-size:clamp(26px,3.8vw,52px);font-weight:300;color:var(--charcoal);line-height:1.08;margin-top:10px}
+    .diag-heading p{color:var(--warm-gray);margin-top:12px;max-width:520px;margin-left:auto;margin-right:auto;font-size:.9rem;line-height:1.65}
+    .diag-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:960px;margin:0 auto;position:relative;z-index:1}
+    @media(max-width:768px){.diag-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:480px){.diag-grid{grid-template-columns:1fr}}
+    .diag-card{border:1px solid rgba(46,43,39,.10);border-radius:14px;padding:22px 20px;cursor:pointer;transition:all .3s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;background:#fff;box-shadow:0 2px 16px rgba(46,43,39,.06)}
+    .diag-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(184,134,78,.08),transparent);opacity:0;transition:opacity .3s}
+    .diag-card:hover{border-color:rgba(184,134,78,.4);transform:translateY(-4px);box-shadow:0 8px 32px rgba(184,134,78,.12)}
+    .diag-card:hover::before{opacity:1}
+    .diag-card.active{border-color:#B8864E;background:linear-gradient(135deg,rgba(184,134,78,.06),#fff);transform:translateY(-4px);box-shadow:0 8px 32px rgba(184,134,78,.15)}
+    .diag-card.active::before{opacity:1}
+    .diag-card.dimmed{opacity:.3}
+    .diag-icon{font-size:22px;margin-bottom:10px;display:block}
+    .diag-card h3{font-family:var(--font-display);font-size:1rem;font-weight:400;color:var(--charcoal);margin-bottom:6px}
+    .diag-card p{font-size:.8rem;color:var(--warm-gray);line-height:1.55;margin:0}
+    .diag-result{max-width:720px;margin:40px auto 0;text-align:center;opacity:0;transform:translateY(16px);transition:all .45s cubic-bezier(.4,0,.2,1);pointer-events:none;position:relative;z-index:1}
+    .diag-result.visible{opacity:1;transform:none;pointer-events:auto}
+    .diag-result-box{border:1px solid rgba(184,134,78,.25);border-radius:16px;padding:36px 40px;background:#fff;box-shadow:0 4px 40px rgba(184,134,78,.12)}
+    .diag-result-label{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.2em;color:var(--bronze);text-transform:uppercase;margin-bottom:12px}
+    .diag-result-text{font-size:1.05rem;color:var(--charcoal);line-height:1.75;margin-bottom:24px}
+    .diag-result-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    /* ── Ticker strip ── */
+    .ticker-strip{background:var(--bronze);padding:10px 0;overflow:hidden;position:relative}
+    .ticker-inner{display:flex;gap:60px;animation:ticker 28s linear infinite;white-space:nowrap}
+    .ticker-item{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.15em;color:#1A1714;display:flex;align-items:center;gap:12px}
+    .ticker-dot{width:5px;height:5px;border-radius:50%;background:#1A1714;opacity:.5;flex-shrink:0}
+    @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    /* ── Feature strip ── */
+    .feature-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--cream);border-bottom:1px solid var(--cream)}
+    .feature-strip-item{padding:40px 32px;border-right:1px solid var(--cream);display:flex;flex-direction:column;gap:10px}
+    .feature-strip-item:last-child{border-right:none}
+    .feature-strip-num{font-family:var(--font-display);font-size:2.8rem;font-weight:300;color:var(--bronze);line-height:1}
+    .feature-strip-label{font-size:.82rem;color:var(--warm-gray);line-height:1.5}
+    @media(max-width:768px){.feature-strip{grid-template-columns:1fr 1fr}.feature-strip-item:nth-child(2){border-right:none}.feature-strip-item:nth-child(3){border-right:1px solid var(--cream)}}
+  </style>
+</head>
+<body>
+
+<div class="grain-overlay"></div>
+<div class="scroll-progress"></div>
+
+<div class="page-loader" id="pageLoader">
+  <div class="loader-inner">
+    <div class="loader-brand">DemandRise</div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+  </div>
+</div>
+
+<div class="cookie-popup" id="cookiePopup">
+  <h3>Cookies</h3>
+  <p>Ми використовуємо cookies, щоб сайт працював стабільно, запам'ятовував ваші налаштування та допомагав нам покращувати контент.</p>
+  <div class="cookie-actions">
+    <button class="btn btn-primary" id="acceptCookies">Прийняти</button>
+    <button class="btn btn-ghost" id="declineCookies">Відхилити</button>
+    <a class="btn btn-ghost" href="/cookie-policy">Детальніше</a>
+  </div>
+</div>
+
+<header class="site-header scrolled" id="top">
+  <div class="container nav-wrap">
+    <a class="brand" href="/" aria-label="DemandRise"><div class="brand-mark">DR</div>DemandRise</a>
+    <button class="nav-toggle" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Головна навігація">
+      <a href="/services">Послуги</a>
+      <a href="/projects">Кейси</a>
+      <a href="/#process">Процес</a>
+      <a href="/about">Про нас</a>
+      <a href="/contact">Контакти</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+380442345678">+380 44 234 5678</a>
+      <a class="header-cta" href="/contact">Отримати консультацію</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ══════════════════════════════════════════
+       БЛОК 1 — AI ДІАГНОСТИКА (унікальний перший)
+  ══════════════════════════════════════════ -->
+  <section class="diag-section" id="diagnostic">
+    <div class="diag-bg-arc2"></div>
+    <div class="container">
+      <div class="diag-heading">
+        <p class="section-label" style="color:var(--bronze)">Безкоштовна діагностика</p>
+        <h2>Що зараз стримує<br/><em style="color:var(--bronze-lt)">ваш бізнес?</em></h2>
+        <p>Оберіть головну проблему — ми покажемо точно, як AI-агенція вирішить її за 30 днів</p>
+      </div>
+
+      <div class="diag-grid" id="diagGrid">
+        <div class="diag-card" tabindex="0"
+          data-label="Мало клієнтів і заявок"
+          data-solution="Ваша проблема — слабка видимість і втрата лідів. Ми запустимо SEO, таргетинг і AI-воронку, яка обробляє заявки 24/7. Середній результат клієнтів — +200% заявок за 60 днів.">
+          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(184,134,78,0.12)"/><polyline points="5,20 10,13 15,16 20,8 23,10" stroke="#B8864E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><polyline points="19,8 23,8 23,12" stroke="#B8864E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="5" y1="23" x2="23" y2="23" stroke="rgba(184,134,78,0.35)" stroke-width="1"/></svg></span>
+          <h3>Мало клієнтів і заявок</h3>
+          <p>Реклама є, але конверсія низька або клієнти не доходять</p>
+        </div>
+        <div class="diag-card" tabindex="0"
+          data-label="Команда тоне в рутині"
+          data-solution="Щодня йдуть години на однотипні відповіді, рахунки, записи та звіти. Ми автоматизуємо це: чат-бот, CRM-інтеграція, тригерні листи. Клієнти звільняють 15–20 годин на тиждень.">
+          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(184,134,78,0.12)"/><circle cx="14" cy="14" r="5.5" stroke="#B8864E" stroke-width="1.8"/><line x1="14" y1="5" x2="14" y2="8" stroke="#B8864E" stroke-width="1.8" stroke-linecap="round"/><line x1="14" y1="20" x2="14" y2="23" stroke="#B8864E" stroke-width="1.8" stroke-linecap="round"/><line x1="5" y1="14" x2="8" y2="14" stroke="#B8864E" stroke-width="1.8" stroke-linecap="round"/><line x1="20" y1="14" x2="23" y2="14" stroke="#B8864E" stroke-width="1.8" stroke-linecap="round"/><circle cx="14" cy="14" r="2" fill="#D4A76A"/></svg></span>
+          <h3>Команда тоне в рутині</h3>
+          <p>Ручні процеси крадуть час на реально важливі завдання</p>
+        </div>
+        <div class="diag-card" tabindex="0"
+          data-label="Слабкий бренд і впізнаваність"
+          data-solution="Ваш бізнес не відрізняється від конкурентів — і це відчувають клієнти. Ми розробимо позиціонування, айдентику та контент-стратегію, яка зробить вас першим вибором у ніші.">
+          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(184,134,78,0.12)"/><polygon points="14,5 17,11 23,11.5 18.5,16 20,22 14,19 8,22 9.5,16 5,11.5 11,11" stroke="#B8864E" stroke-width="1.8" stroke-linejoin="round" fill="rgba(184,134,78,0.15)"/></svg></span>
+          <h3>Слабкий бренд і впізнаваність</h3>
+          <p>Важко пояснити чому варто обрати саме вас</p>
+        </div>
+        <div class="diag-card" tabindex="0"
+          data-label="Instagram не продає"
+          data-solution="Підписники є, але продажів немає — класична проблема без стратегії. Ми перепакуємо контент, налаштуємо таргет і побудуємо воронку прямо в Instagram. Кейс: 45K живих підписників за 90 днів.">
+          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(184,134,78,0.12)"/><rect x="6" y="6" width="16" height="16" rx="5" stroke="#B8864E" stroke-width="1.8"/><circle cx="14" cy="14" r="3.5" stroke="#B8864E" stroke-width="1.6"/><circle cx="19.5" cy="8.5" r="1.2" fill="#D4A76A"/></svg></span>
+          <h3>Instagram не продає</h3>
+          <p>Є акаунт, є пости — але підписники не стають клієнтами</p>
+        </div>
+        <div class="diag-card" tabindex="0"
+          data-label="Сайт не приносить трафік"
+          data-solution="Якщо вас немає в Google — вас немає для більшості клієнтів. Ми проведемо SEO-аудит, виправимо критичні помилки і побудуємо органічний трафік, який зростає без зупинок. Результат — ×4 трафіку за 6 місяців.">
+          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(184,134,78,0.12)"/><circle cx="12.5" cy="12.5" r="5.5" stroke="#B8864E" stroke-width="1.8"/><line x1="16.5" y1="16.5" x2="22" y2="22" stroke="#B8864E" stroke-width="2" stroke-linecap="round"/><line x1="10" y1="12.5" x2="15" y2="12.5" stroke="#D4A76A" stroke-width="1.4" stroke-linecap="round"/><line x1="12.5" y1="10" x2="12.5" y2="15" stroke="#D4A76A" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+          <h3>Сайт не приносить трафік</h3>
+          <p>Google вас не знаходить або позиції занадто низькі</p>
+        </div>
+        <div class="diag-card" tabindex="0"
+          data-label="Не розумію де втрачаю гроші"
+          data-solution="Без аналітики ви оптимізуєте наосліп. Ми налаштуємо відстеження всієї воронки, знайдемо де тікають гроші і побудуємо звітність, яка реально допомагає приймати рішення щодня.">
+          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(184,134,78,0.12)"/><rect x="5" y="17" width="5" height="6" rx="1.5" fill="rgba(184,134,78,0.4)" stroke="#B8864E" stroke-width="1.2"/><rect x="12" y="12" width="5" height="11" rx="1.5" fill="rgba(184,134,78,0.55)" stroke="#B8864E" stroke-width="1.2"/><rect x="19" y="7" width="5" height="16" rx="1.5" fill="#D4A76A" stroke="#B8864E" stroke-width="1.2" opacity="0.9"/><line x1="4" y1="24" x2="24" y2="24" stroke="rgba(184,134,78,0.4)" stroke-width="1"/></svg></span>
+          <h3>Не розумію де втрачаю гроші</h3>
+          <p>Гроші в маркетинг йдуть, але незрозуміло що працює</p>
+        </div>
+      </div>
+
+      <div class="diag-result" id="diagResult">
+        <div class="diag-result-box">
+          <div class="diag-result-label" id="diagResultLabel">Рішення для вашої ситуації</div>
+          <div class="diag-result-text" id="diagResultText"></div>
+          <div class="diag-result-actions">
+            <a class="btn btn-bronze" href="/contact">Отримати план вирішення →</a>
+            <a class="btn btn-ghost" href="/services" style="color:var(--ivory);border-color:rgba(247,244,239,.25)">Всі послуги</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       TICKER — рухомий рядок
+  ══════════════════════════════════════════ -->
+  <div class="ticker-strip">
+    <div class="ticker-inner" aria-hidden="true">
+      <span class="ticker-item"><span class="ticker-dot"></span>AI АВТОМАТИЗАЦІЯ</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>SMM ПРОСУВАННЯ</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>SEO ТРАФІК</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>БРЕНДИНГ</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>GROWTH HACKING</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>AI-КОНТЕНТ</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>200+ КЛІЄНТІВ</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>30+ AI ІНСТРУМЕНТІВ</span>
+      <!-- duplicate for seamless loop -->
+      <span class="ticker-item"><span class="ticker-dot"></span>AI АВТОМАТИЗАЦІЯ</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>SMM ПРОСУВАННЯ</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>SEO ТРАФІК</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>БРЕНДИНГ</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>GROWTH HACKING</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>AI-КОНТЕНТ</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>200+ КЛІЄНТІВ</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>30+ AI ІНСТРУМЕНТІВ</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       БЛОК 2 — HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="container hero-content">
+      <div>
+        <div class="hero-label reveal"><div class="hero-label-dot"></div><span>Беремо нових клієнтів на 2026 рік</span></div>
+        <h1 class="hero-title reveal reveal-delay-1">AI-автоматизація,<br/>яка <em>працює для бізнесу</em></h1>
+        <p class="hero-desc reveal reveal-delay-2">DemandRise автоматизує бізнес-процеси, просуває сайти, бренди та соцмережі за допомогою сучасних AI-інструментів. Від аудиту до реального результату — без порожніх обіцянок.</p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a class="btn btn-primary" href="/contact">Обговорити проєкт</a>
+          <a class="btn btn-ghost" href="/projects">Дивитися кейси</a>
+        </div>
+        <div class="hero-stats reveal reveal-delay-4">
+          <div><div class="hero-stat-num" data-count="2" data-suffix="+">2+</div><div class="hero-stat-label">роки на ринку</div></div>
+          <div><div class="hero-stat-num" data-count="200" data-suffix="+">200+</div><div class="hero-stat-label">клієнтів</div></div>
+          <div><div class="hero-stat-num" data-count="30" data-suffix="+">30+</div><div class="hero-stat-label">AI-інструментів</div></div>
+          <div><div class="hero-stat-num" data-count="15" data-suffix="">15</div><div class="hero-stat-label">галузей</div></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-image-frame">
+          <div class="hero-arch-visual"><img class="content-image" src="assets/img/hero-ai.svg" alt="AI-автоматизація бізнесу"/></div>
+        </div>
+        <div class="hero-card-float"><p class="eyebrow">У роботі</p><div class="value">E-commerce «FashionFlow»</div><div class="sub">AI-воронка · +68% конверсія</div></div>
+        <div class="hero-tag-float">Кейси 200+ клієнтів</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       БЛОК 3 — ЦИФРИ/МЕТРИКИ
+  ══════════════════════════════════════════ -->
+  <section class="awards-section" id="awards">
+    <div class="container">
+      <p class="section-label reveal">Результати</p>
+      <h2 class="display-lg reveal reveal-delay-1" style="color:var(--ivory);margin-top:16px">Досвід, що видно<br/><em style="color:var(--bronze-lt)">у цифрах клієнтів</em></h2>
+      <div class="awards-grid">
+        <div class="award-item reveal"><div class="award-num" data-count="200" data-suffix="+">200+</div><div class="award-label">клієнтів в портфоліо</div></div>
+        <div class="award-item reveal reveal-delay-1"><div class="award-num" data-count="30" data-suffix="+">30+</div><div class="award-label">AI-інструментів в арсеналі</div></div>
+        <div class="award-item reveal reveal-delay-2"><div class="award-num" data-count="15">15</div><div class="award-label">галузей досвіду</div></div>
+        <div class="award-item reveal reveal-delay-3"><div class="award-num">4.2×</div><div class="award-label">середній ROI по клієнтах</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════════════════════════════════════════
+       БЛОК 4 — ПОСЛУГИ
+  ══════════════════════════════════════════ -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div><p class="section-label reveal">Наші послуги</p><h2 class="reveal reveal-delay-1">Автоматизуємо та просуваємо комплексно</h2></div>
+        <p class="reveal reveal-delay-2">Не продаємо окремі послуги без зв'язку з результатом. Стратегія, AI-інструменти, контент і аналітика працюють разом і дають вимірюваний ефект.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal"><div class="service-num">1</div><div class="service-icon">▣</div><h3>AI автоматизація бізнесу</h3><p>Чат-боти, CRM-інтеграції, автоворонки продажів та автоматизація рутини — бізнес продає 24/7 без додаткових людей.</p><a href="/services" class="service-link">Детальніше →</a></div>
+        <div class="service-card reveal reveal-delay-1"><div class="service-num">2</div><div class="service-icon">◫</div><h3>SMM та просування в соцмережах</h3><p>Instagram, TikTok, Facebook — стратегія, контент-план, публікації, таргетована реклама та зростання живої аудиторії.</p><a href="/services" class="service-link">Детальніше →</a></div>
+        <div class="service-card featured reveal reveal-delay-2"><div class="service-num" style="color:rgba(247,244,239,.3)">3</div><div class="service-icon">◌</div><h3>SEO та просування сайтів</h3><p>Органічний трафік, технічне SEO, контекстна реклама та таргетинг, що приводять платоспроможних клієнтів без зупинки.</p><a href="/services" class="service-link">Детальніше →</a></div>
+        <div class="service-card reveal"><div class="service-num">4</div><div class="service-icon">▱</div><h3>Розробка бренду та айдентики</h3><p>Логотип, фірмовий стиль, brand book та позиціонування, що відрізняють вас від конкурентів і запам'ятовуються.</p><a href="/services" class="service-link">Детальніше →</a></div>
+        <div class="service-card reveal reveal-delay-1"><div class="service-num">5</div><div class="service-icon">⌂</div><h3>AI-контент та копірайтинг</h3><p>Тексти для сайту, email-розсилки, рекламні кампанії та автоматизований контент-маркетинг з перевіреною структурою.</p><a href="/services" class="service-link">Детальніше →</a></div>
+        <div class="service-card reveal reveal-delay-2"><div class="service-num">6</div><div class="service-icon">✓</div><h3>Аналітика та growth hacking</h3><p>Метрики, A/B тести, воронки та звіти — знаємо що дає результат і масштабуємо саме це без зайвих витрат.</p><a href="/services" class="service-link">Детальніше →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════════════════════════════════════════
+       БЛОК 5 — КЕЙСИ
+  ══════════════════════════════════════════ -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div><p class="section-label reveal">Кейси</p><h2 class="reveal reveal-delay-1">Результати, що говорять самі</h2></div>
+        <a href="/projects" class="btn btn-outline reveal reveal-delay-2">Переглянути всі →</a>
+      </div>
+      <div class="projects-grid home-projects-grid">
+        <article class="project-card" data-cat="automation"><div class="project-visual"><div class="project-visual-inner"><img class="project-image" src="assets/img/project-automation.svg" alt="AI автоматизація FashionFlow"/></div></div><div class="project-overlay"></div><div class="project-tag">Автоматизація</div><div class="project-info"><h3>FashionFlow E-commerce</h3><p>AI-воронка та чат-бот · +340% продажів</p></div></article>
+        <article class="project-card" data-cat="smm"><div class="project-visual"><div class="project-visual-inner"><img class="project-image" src="assets/img/project-smm.svg" alt="Instagram Craft Kitchen"/></div></div><div class="project-overlay"></div><div class="project-tag">SMM</div><div class="project-info"><h3>Ресторан «Craft Kitchen»</h3><p>Instagram · 0→45K підписників за 90 днів</p></div></article>
+        <article class="project-card" data-cat="seo"><div class="project-visual"><div class="project-visual-inner"><img class="project-image" src="assets/img/project-seo.svg" alt="SEO DataFlow IT"/></div></div><div class="project-overlay"></div><div class="project-tag">SEO</div><div class="project-info"><h3>IT-компанія «DataFlow»</h3><p>SEO · ×4 органічного трафіку за 6 місяців</p></div></article>
+        <article class="project-card" data-cat="brand"><div class="project-visual"><div class="project-visual-inner"><img class="project-image" src="assets/img/project-brand.svg" alt="Брендинг NovaTech"/></div></div><div class="project-overlay"></div><div class="project-tag">Брендинг</div><div class="project-info"><h3>Стартап «NovaTech»</h3><p>Бренд з нуля · від ідеї до впізнаваності</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════════════════════════════════════════
+       БЛОК 6 — ПРОЦЕС
+  ══════════════════════════════════════════ -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div><p class="section-label reveal">Як ми працюємо</p><h2 class="reveal reveal-delay-1">Від запиту до результату</h2></div>
+        <p class="reveal reveal-delay-2">Чотири кроки без зайвої бюрократії. Кожен етап має конкретний результат і зрозумілий наступний крок — ніякого туману між «хочемо більше клієнтів» і «ось що робимо».</p>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step reveal"><div class="step-dot">1<div class="step-num">1</div></div><h3>Аудит та аналіз</h3><p>Вивчаємо бізнес, нішу, конкурентів і поточний стан просування. Знаходимо точки зростання й визначаємо, що дасть результат найшвидше при вашому бюджеті.</p></div>
+        <div class="process-step reveal reveal-delay-1"><div class="step-dot">2<div class="step-num">2</div></div><h3>Стратегія</h3><p>Розробляємо конкретний план з інструментами, термінами й очікуваними показниками. Ви бачите не абстракцію, а реальний маршрут до цілі.</p></div>
+        <div class="process-step reveal reveal-delay-2"><div class="step-dot">3<div class="step-num">3</div></div><h3>Впровадження</h3><p>Налаштовуємо AI-інструменти, запускаємо кампанії, створюємо контент і автоматизуємо процеси. Все під ключ без зайвого навантаження на вашу команду.</p></div>
+        <div class="process-step reveal reveal-delay-3"><div class="step-dot">4<div class="step-num">4</div></div><h3>Масштабування</h3><p>Щомісячні звіти, A/B тести та оптимізація каналів, які дають результат. Ростемо разом із вашим бізнесом — поки конкуренти стоять на місці.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       БЛОК 7 — ВІДГУКИ
+  ══════════════════════════════════════════ -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header"><div><p class="section-label reveal">Відгуки</p><h2 class="reveal reveal-delay-1">Що цінують клієнти</h2></div></div>
+      <div class="testimonials-track">
+        <div class="testimonial-card reveal"><span class="quote-mark">"</span><p class="testimonial-text">Команда не просто налаштувала чат-бот. Вони розібралися в нашому бізнесі, зрозуміли де ми втрачаємо клієнтів, і побудували систему, яка продає навіть вночі. За перший місяць — +68% конверсія.</p><div class="testimonial-author"><div class="author-avatar">В</div><div><div class="author-name">Валерій Дорошенко</div><div class="author-title">власник інтернет-магазину, Київ</div><div class="rating">★★★★★</div></div></div></div>
+        <div class="testimonial-card reveal reveal-delay-1"><span class="quote-mark">"</span><p class="testimonial-text">Ми прийшли з нульовим Instagram і вийшли з аудиторією 45К за 3 місяці. Важливо — не накручена, а жива аудиторія, яка купує. Це змінило все просування нашого ресторану.</p><div class="testimonial-author"><div class="author-avatar">О</div><div><div class="author-name">Оксана Литвиненко</div><div class="author-title">власниця Craft Kitchen, Харків</div><div class="rating">★★★★★</div></div></div></div>
+        <div class="testimonial-card reveal reveal-delay-2"><span class="quote-mark">"</span><p class="testimonial-text">SEO-просування дало результат через 4 місяці: з нульових позицій вийшли в топ-3 Google за ключовими запитами. Органічний трафік виріс у 4 рази. Рекомендую без застережень.</p><div class="testimonial-author"><div class="author-avatar">І</div><div><div class="author-name">Ігор Стецюк</div><div class="author-title">CEO, DataFlow IT, Львів</div><div class="rating">★★★★★</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       БЛОК 8 — КОМАНДА
+  ══════════════════════════════════════════ -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="section-header">
+        <div><p class="section-label reveal">Команда</p><h2 class="reveal reveal-delay-1">Люди за результатами</h2></div>
+        <p class="reveal reveal-delay-2">AI-стратеги, SMM-спеціалісти, технічні розробники та аналітики — кожен відповідає за свій напрям, але результат вимірюється для всього бізнесу клієнта.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal"><div class="team-photo"><div class="team-photo-inner"><img class="team-image" src="assets/img/team/image-20-1-400x400.jpg" alt="Юлія Борова, CEO"/></div></div><div class="team-info"><h3>Юлія Борова</h3><div class="team-role">Засновниця та CEO, AI-стратег</div><p>Відповідає за стратегію, якість рішень та розвиток агенції. Поєднує бізнес-мислення з глибоким розумінням AI-інструментів та цифрового маркетингу.</p></div></div>
+        <div class="team-card reveal reveal-delay-1"><div class="team-photo"><div class="team-photo-inner"><img class="team-image" src="assets/img/team/image-17-1-400x400.jpg" alt="Максим Яценко"/></div></div><div class="team-info"><h3>Максим Яценко</h3><div class="team-role">Керівник відділу AI-автоматизації</div><p>Розробляє чат-ботів, автоворонки та CRM-інтеграції. Перетворює складні бізнес-процеси на прості системи, що працюють 24/7.</p></div></div>
+        <div class="team-card reveal reveal-delay-2"><div class="team-photo"><div class="team-photo-inner"><img class="team-image" src="assets/img/team/image-19-1-400x400.jpg" alt="Діана Мороз"/></div></div><div class="team-info"><h3>Діана Мороз</h3><div class="team-role">Head of SMM та просування брендів</div><p>Будує Instagram та TikTok акаунти з нуля. Розробляє контент-стратегії, що перетворюють охоплення на реальних клієнтів.</p></div></div>
+        <div class="team-card reveal reveal-delay-3"><div class="team-photo"><div class="team-photo-inner"><img class="team-image" src="assets/img/team/image-15-400x400.jpg" alt="Андрій Федоренко"/></div></div><div class="team-info"><h3>Андрій Федоренко</h3><div class="team-role">Технічний директор, SEO & Analytics</div><p>Відповідає за SEO, технічний аудит та аналітику. Знаходить точки зростання там, де інші бачать лише цифри.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       БЛОК 9 — CTA + КОНТАКТИ
+  ══════════════════════════════════════════ -->
+  <section class="cta-section" id="cta">
+    <div class="cta-bg-arc"></div>
+    <div class="container cta-content">
+      <p class="section-label reveal">Почнемо з розмови</p>
+      <h2 class="reveal reveal-delay-1">Ваш бізнес може<br/>зростати <em style="color:var(--bronze-lt);font-style:italic">швидше</em></h2>
+      <p class="reveal reveal-delay-2">Опишіть задачу — ми підкажемо які AI-інструменти підійдуть саме вам, скільки часу займе результат і де можна виграти без великих витрат.</p>
+      <div class="cta-actions reveal reveal-delay-3">
+        <a class="btn btn-bronze" href="/contact">Отримати консультацію</a>
+        <a class="btn btn-ghost" href="/projects" style="color:var(--ivory);border-color:rgba(247,244,239,.25)">Кейси</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="container contact-layout">
+      <div class="contact-info">
+        <p class="section-label reveal">Контакти</p>
+        <h2 class="reveal reveal-delay-1">Розкажіть, що хочете автоматизувати або просунути</h2>
+        <p class="reveal reveal-delay-2">Ми відповідаємо протягом робочого дня. Для першої розмови достатньо короткого опису бізнесу та бажаного результату.</p>
+        <div class="contact-details">
+          <div class="contact-item reveal"><div class="contact-icon">⌖</div><div><div class="contact-item-title">ФОП</div><div class="contact-item-value">ФОП Борова Юлія</div></div></div>
+          <div class="contact-item reveal"><div class="contact-icon">⌖</div><div><div class="contact-item-title">Адреса</div><div class="contact-item-value">УКРАЇНА ХМЕЛЬНИЦЬКА ОБЛАСТЬ ХМЕЛЬНИЦЬКИЙ РАЙОН С. МАЛІ ПУЗИРКИ ВУЛ. ЛЕСІ УКРАЇНКИ БУД. 13</div></div></div>
+          <div class="contact-item reveal reveal-delay-1"><div class="contact-icon">☎</div><div><div class="contact-item-title">Телефон</div><div class="contact-item-value"><a href="tel:+380442345678">+380 44 234 5678</a></div></div></div>
+          <div class="contact-item reveal reveal-delay-2"><div class="contact-icon">@</div><div><div class="contact-item-title">Email</div><div class="contact-item-value"><a href="mailto:support@DemandRise.site">support@DemandRise.site</a></div></div></div>
+        </div>
+      </div>
+      <div class="contact-form reveal reveal-delay-2">
+        <h3 class="form-title">Надіслати запит</h3>
+        <form class="contact-form-el">
+          <div class="form-grid">
+            <div class="form-group"><label>Ім'я</label><input type="text" placeholder="Ваше ім'я" required/></div>
+            <div class="form-group"><label>Телефон</label><input type="tel" placeholder="+380 XX XXX XX XX"/></div>
+            <div class="form-group full"><label>Email</label><input type="email" placeholder="your@email.com" required/></div>
+            <div class="form-group full"><label>Запит</label><textarea placeholder="Коротко опишіть бізнес, чого хочете досягти і що вже пробували"></textarea></div>
+          </div>
+          <div class="form-submit"><button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">Надіслати запит →</button></div>
+          <p class="form-privacy">Натискаючи кнопку, ви погоджуєтесь з <a href="/privacy-policy">Політикою конфіденційності</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-divider"></div>
+  <div class="footer-wordmark" aria-hidden="true">DemandRise</div>
+
+  <div class="container">
+    <div class="footer-body">
+
+      <!-- CTA COLUMN -->
+      <div class="footer-cta-col">
+        <div class="footer-logo-mark">
+          <svg class="footer-logo-svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="DemandRise логотип">
+            <rect width="44" height="44" rx="10" fill="rgba(247,244,239,0.07)"/>
+            <path d="M22 8 L36 30 H8 Z" fill="none" stroke="#B8864E" stroke-width="1.4" stroke-linejoin="round"/>
+            <path d="M22 16 L30 30 H14 Z" fill="rgba(184,134,78,0.18)" stroke="none"/>
+            <circle cx="22" cy="8" r="2" fill="#D4A76A"/>
+            <line x1="14" y1="34" x2="30" y2="34" stroke="rgba(247,244,239,0.15)" stroke-width="1"/>
+            <path d="M18 38 H26" stroke="#B8864E" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span class="footer-logo-name">DemandRise</span>
+        </div>
+        <p class="footer-cta-tagline">Готові зробити<br/><em>наступний крок?</em></p>
+        <p class="footer-cta-desc">Перша консультація — безкоштовно. Розповімо, які інструменти дадуть результат саме у вашому бізнесі.</p>
+        <a class="footer-cta-btn" href="/contact">Написати нам →</a>
+        <div class="footer-cta-contacts">
+          <a href="tel:+380442345678">+380 44 234 5678</a>
+          <a href="mailto:support@DemandRise.site">support@DemandRise.site</a>
+        </div>
+      </div>
+
+      <!-- SERVICES COLUMN -->
+      <div class="footer-nav-col" style="padding-left:48px">
+        <h4>Послуги</h4>
+        <ul>
+          <li><a href="/services">AI автоматизація бізнесу</a></li>
+          <li><a href="/services">SMM та просування</a></li>
+          <li><a href="/services">SEO та просування сайтів</a></li>
+          <li><a href="/services">Розробка бренду</a></li>
+          <li><a href="/services">AI-контент та копірайтинг</a></li>
+          <li><a href="/services">Аналітика та growth hacking</a></li>
+        </ul>
+      </div>
+
+      <!-- COMPANY COLUMN -->
+      <div class="footer-nav-col" style="padding-left:40px">
+        <h4>Компанія</h4>
+        <ul>
+          <li><a href="/about">Про нас</a></li>
+          <li><a href="/projects">Кейси</a></li>
+          <li><a href="/about#team">Команда</a></li>
+          <li><a href="/#process">Процес</a></li>
+          <li><a href="/contact">Контакти</a></li>
+        </ul>
+        <div style="margin-top:32px">
+          <p style="font-family:var(--font-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,244,239,.2);margin-bottom:8px">Режим роботи</p>
+          <p style="font-size:.8rem;color:rgba(247,244,239,.4);line-height:1.6">Пн–Пт: 09:00–19:00<br/>Сб: за домовленістю</p>
+        </div>
+      </div>
+
+      <!-- CONTACTS COLUMN -->
+      <div class="footer-contacts-col">
+        <h4>Знайдіть нас</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">☎</div>
+          <div class="footer-contact-text">
+            <a href="tel:+380442345678">+380 44 234 5678</a>
+            <small>Дзвінки та Viber</small>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">@</div>
+          <div class="footer-contact-text">
+            <a href="mailto:support@DemandRise.site">support@DemandRise.site</a>
+            <small>Email для запитів</small>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">⌖</div>
+          <div class="footer-contact-text">
+            <span>ФОП Борова Юлія</span>
+            <small>Хмельницька обл., Малі Пузирки</small>
+          </div>
+        </div>
+
+      </div>
+
+    </div><!-- /footer-body -->
+
+    <div class="footer-bottom-bar">
+      <p class="footer-bottom-copy">© 2025 <span>DemandRise Agency</span> · Усі права захищені · <span>2023–2025</span></p>
+      <nav class="footer-legal-links" aria-label="Юридична навігація">
+        <a href="/privacy-policy">Конфіденційність</a>
+        <a href="/terms-and-conditions">Умови</a>
+        <a href="/cookie-policy">Cookies</a>
+        <a href="/disclaimer">Відмова</a>
+      </nav>
+      <button class="footer-btt back-to-top" aria-label="Вгору">↑</button>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+/* AI Diagnostic interaction */
+(function(){
+  var cards = document.querySelectorAll('.diag-card');
+  var result = document.getElementById('diagResult');
+  var resultLabel = document.getElementById('diagResultLabel');
+  var resultText = document.getElementById('diagResultText');
+  var active = null;
+
+  cards.forEach(function(card){
+    card.addEventListener('click', function(){
+      if(active === card){
+        card.classList.remove('active');
+        cards.forEach(function(c){ c.classList.remove('dimmed'); });
+        result.classList.remove('visible');
+        active = null;
+        return;
+      }
+      cards.forEach(function(c){
+        c.classList.remove('active');
+        c.classList.add('dimmed');
+      });
+      card.classList.add('active');
+      card.classList.remove('dimmed');
+      active = card;
+      resultLabel.textContent = 'Рішення для: «' + card.dataset.label + '»';
+      resultText.textContent = card.dataset.solution;
+      result.classList.add('visible');
+      setTimeout(function(){
+        result.scrollIntoView({behavior:'smooth', block:'nearest'});
+      }, 100);
+    });
+    card.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); card.click(); }
+    });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+﻿<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Послуги — DemandRise</title>
+  <meta name="description" content="AI автоматизація бізнесу, SMM та просування в соцмережах, SEO, розробка бренду, AI-контент та growth hacking від агенції DemandRise."/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <style>
+    .price-tag{display:inline-flex;align-items:baseline;gap:6px;margin:20px 0 24px;padding:10px 18px;border-radius:8px;background:rgba(184,134,78,.08);border:1px solid rgba(184,134,78,.2)}
+    .price-tag .price-from{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.12em;color:var(--bronze);text-transform:uppercase}
+    .price-tag .price-num{font-family:var(--font-display);font-size:1.9rem;font-weight:400;color:var(--bronze);line-height:1}
+    .price-tag .price-unit{font-size:.78rem;color:var(--warm-gray)}
+    .service-row .price-inline{font-family:var(--font-mono);font-size:.78rem;color:var(--bronze);letter-spacing:.05em;white-space:nowrap;background:rgba(184,134,78,.08);border:1px solid rgba(184,134,78,.18);padding:5px 12px;border-radius:6px}
+    /* override grid to 4 cols on services page */
+    .services-list .service-row{grid-template-columns:80px 1fr auto auto;gap:24px}
+    @media(max-width:768px){.services-list .service-row{grid-template-columns:auto 1fr;gap:16px}.services-list .service-row .price-inline,.services-list .service-row .arrow{display:none}}
+  </style>
+</head>
+<body>
+<div class="grain-overlay"></div>
+<div class="scroll-progress"></div>
+<div class="page-loader" id="pageLoader">
+  <div class="loader-inner">
+    <div class="loader-brand">DemandRise</div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+  </div>
+</div>
+
+<header class="site-header scrolled" id="top">
+  <div class="container nav-wrap">
+    <a class="brand" href="/" aria-label="DemandRise"><div class="brand-mark">DR</div>DemandRise</a>
+    <button class="nav-toggle" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Головна навігація">
+      <a href="/services" style="opacity:1;font-weight:500">Послуги</a>
+      <a href="/projects">Кейси</a>
+      <a href="/#process">Процес</a>
+      <a href="/about">Про нас</a>
+      <a href="/contact">Контакти</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+380442345678">+380 44 234 5678</a>
+      <a class="header-cta" href="/contact">Отримати консультацію</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- PAGE HERO -->
+  <section class="page-hero"><div class="container"><div class="page-hero-content"><div class="breadcrumb"><a href="/">Головна</a><span>/</span><span>Послуги</span></div><h1 class="reveal">Що ми<br/>робимо</h1><p class="reveal reveal-delay-1">Працюємо з просуванням та автоматизацією як із системою: AI-інструменти, контент, аналітика та реклама мають підтримувати одне одного й давати вимірюваний результат.</p></div></div></section>
+
+  <!-- БЛОК 1: ДЕТАЛЬНІ СЕКЦІЇ ПОСЛУГ -->
+  <section style="background:var(--ivory);padding:100px 0"><div class="container">
+    <div class="service-detail">
+      <div class="service-detail-visual reveal-left" style="direction:ltr"><img class="service-image" src="assets/img/project-automation.svg" alt="AI автоматизація бізнесу"/></div>
+      <div class="reveal-right" style="direction:ltr">
+        <p class="eyebrow" style="margin-bottom:16px">1</p>
+        <h3>AI автоматизація бізнесу</h3>
+        <p>Починаємо з аудиту поточних процесів: де бізнес витрачає найбільше часу та де губляться ліди. Далі налаштовуємо чат-боти, інтегруємо CRM, будуємо автоматичні воронки — щоб продажі та підтримка клієнтів працювали без зупинок і без людини.</p>
+        <div class="price-tag">
+          <span class="price-from">від</span>
+          <span class="price-num">15 000</span>
+          <span class="price-unit">грн / проєкт</span>
+        </div>
+        <div class="feature-chips"><span class="chip">Чат-боти</span><span class="chip">CRM-інтеграції</span><span class="chip">Автоворонки</span><span class="chip">Email-автоматизація</span><span class="chip">Telegram-боти</span></div>
+        <div style="margin-top:28px"><a class="btn btn-primary" href="/contact">Обговорити проєкт</a></div>
+      </div>
+    </div>
+    <div class="service-detail" style="direction:rtl">
+      <div class="service-detail-visual reveal-right" style="direction:ltr"><img class="service-image" src="assets/img/project-brand.svg" alt="Розробка бренду та айдентики"/></div>
+      <div class="reveal-left" style="direction:ltr">
+        <p class="eyebrow" style="margin-bottom:16px">4</p>
+        <h3>Розробка бренду та айдентики</h3>
+        <p>Бренд — це не логотип. Це те, що клієнт відчуває при кожному контакті з бізнесом. Ми формуємо позиціонування, розробляємо візуальну мову та brand book, який дає стабільність у всіх точках контакту.</p>
+        <div class="price-tag">
+          <span class="price-from">від</span>
+          <span class="price-num">12 000</span>
+          <span class="price-unit">грн / проєкт</span>
+        </div>
+        <div class="feature-chips"><span class="chip">Логотип</span><span class="chip">Фірмовий стиль</span><span class="chip">Brand book</span><span class="chip">Позиціонування</span><span class="chip">Соціальні шаблони</span></div>
+        <div style="margin-top:28px"><a class="btn btn-primary" href="/contact">Обговорити проєкт</a></div>
+      </div>
+    </div>
+    <div class="service-detail">
+      <div class="service-detail-visual reveal-left" style="direction:ltr"><img class="service-image" src="assets/img/project-smm.svg" alt="SMM та просування в соцмережах"/></div>
+      <div class="reveal-right" style="direction:ltr">
+        <p class="eyebrow" style="margin-bottom:16px">2</p>
+        <h3>SMM та просування в соцмережах</h3>
+        <p>Соцмережі мають бути красивими у день публікації й приводити клієнтів через рік. Ми розробляємо контент-стратегію, знімаємо та монтуємо Reels, налаштовуємо таргетовану рекламу та залучаємо живу аудиторію, яка купує.</p>
+        <div class="price-tag">
+          <span class="price-from">від</span>
+          <span class="price-num">8 000</span>
+          <span class="price-unit">грн / міс</span>
+        </div>
+        <div class="feature-chips"><span class="chip">Instagram</span><span class="chip">TikTok</span><span class="chip">Facebook</span><span class="chip">Reels</span><span class="chip">Таргетована реклама</span><span class="chip">Аналітика</span></div>
+        <div style="margin-top:28px"><a class="btn btn-primary" href="/contact">Обговорити проєкт</a></div>
+      </div>
+    </div>
+    <div class="service-detail" style="direction:rtl">
+      <div class="service-detail-visual reveal-right" style="direction:ltr"><img class="service-image" src="assets/img/studio-team.svg" alt="AI-контент та копірайтинг"/></div>
+      <div class="reveal-left" style="direction:ltr">
+        <p class="eyebrow" style="margin-bottom:16px">5</p>
+        <h3>AI-контент та копірайтинг</h3>
+        <p>Контент-маркетинг допомагає продавати до того, як клієнт звернувся напряму. Ми пишемо тексти для сайту, запускаємо email-серії та будуємо автоматизовані контент-воронки з перевіреною структурою конверсії.</p>
+        <div class="price-tag">
+          <span class="price-from">від</span>
+          <span class="price-num">5 000</span>
+          <span class="price-unit">грн / міс</span>
+        </div>
+        <div class="feature-chips"><span class="chip">Тексти для сайту</span><span class="chip">Email-серії</span><span class="chip">Лендінги</span><span class="chip">Рекламні тексти</span></div>
+        <div style="margin-top:28px"><a class="btn btn-primary" href="/contact">Обговорити проєкт</a></div>
+      </div>
+    </div>
+    <div class="service-detail">
+      <div class="service-detail-visual reveal-left" style="direction:ltr"><img class="service-image" src="assets/img/project-seo.svg" alt="SEO та просування сайтів"/></div>
+      <div class="reveal-right" style="direction:ltr">
+        <p class="eyebrow" style="margin-bottom:16px">3</p>
+        <h3>SEO та просування сайтів</h3>
+        <p>Органічний трафік не закінчується після відключення бюджету. Ми проводимо технічний аудит, оптимізуємо структуру сайту, будуємо посилальний профіль і забезпечуємо стабільне зростання позицій у пошуку.</p>
+        <div class="price-tag">
+          <span class="price-from">від</span>
+          <span class="price-num">6 000</span>
+          <span class="price-unit">грн / міс</span>
+        </div>
+        <div class="feature-chips"><span class="chip">Технічне SEO</span><span class="chip">Контент-оптимізація</span><span class="chip">Link building</span><span class="chip">Google Ads</span><span class="chip">Аналітика трафіку</span></div>
+        <div style="margin-top:28px"><a class="btn btn-primary" href="/contact">Обговорити проєкт</a></div>
+      </div>
+    </div>
+    <div class="service-detail" style="direction:rtl">
+      <div class="service-detail-visual reveal-right" style="direction:ltr"><img class="service-image" src="assets/img/hero-ai.svg" alt="Аналітика та growth hacking"/></div>
+      <div class="reveal-left" style="direction:ltr">
+        <p class="eyebrow" style="margin-bottom:16px">6</p>
+        <h3>Аналітика та growth hacking</h3>
+        <p>Найкраща стратегія потребує постійного вдосконалення на основі даних. Ми налаштовуємо аналітику, проводимо A/B тести, знаходимо точки витоку у воронці та масштабуємо те, що доведено працює.</p>
+        <div class="price-tag">
+          <span class="price-from">від</span>
+          <span class="price-num">7 000</span>
+          <span class="price-unit">грн / міс</span>
+        </div>
+        <div class="feature-chips"><span class="chip">Google Analytics</span><span class="chip">A/B тести</span><span class="chip">Воронки</span><span class="chip">Щомісячні звіти</span><span class="chip">ROI-аналіз</span></div>
+        <div style="margin-top:28px"><a class="btn btn-primary" href="/contact">Обговорити проєкт</a></div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- БЛОК 2: СПИСОК ПОСЛУГ -->
+  <div class="divider"></div>
+  <section style="background:var(--white);padding:80px 0"><div class="container"><div class="section-header" style="margin-bottom:48px"><div><p class="section-label reveal">Усі напрямки</p><h2 class="reveal reveal-delay-1">Повний перелік</h2></div></div><div class="services-list reveal">
+    <div class="service-row"><div class="service-row-num">1</div><div><h3>AI автоматизація бізнесу</h3><p>Чат-боти, CRM-інтеграції, автоворонки продажів і автоматизація рутинних процесів — 24/7 без людини.</p></div><span class="price-inline">від 15 000 грн</span><div class="arrow">→</div></div>
+    <div class="service-row"><div class="service-row-num">2</div><div><h3>SMM та просування в соцмережах</h3><p>Instagram, TikTok, Facebook — стратегія, контент, таргетована реклама та зростання живої аудиторії.</p></div><span class="price-inline">від 8 000 грн/міс</span><div class="arrow">→</div></div>
+    <div class="service-row"><div class="service-row-num">3</div><div><h3>SEO та просування сайтів</h3><p>Органічний трафік, технічне SEO, контекстна реклама та таргетинг для стабільного потоку клієнтів.</p></div><span class="price-inline">від 6 000 грн/міс</span><div class="arrow">→</div></div>
+    <div class="service-row"><div class="service-row-num">4</div><div><h3>Розробка бренду та айдентики</h3><p>Логотип, фірмовий стиль, brand book та позиціонування, що відрізняють вас від конкурентів.</p></div><span class="price-inline">від 12 000 грн</span><div class="arrow">→</div></div>
+    <div class="service-row"><div class="service-row-num">5</div><div><h3>AI-контент та копірайтинг</h3><p>Тексти для сайту, email-розсилки, рекламні матеріали та автоматизований контент-маркетинг.</p></div><span class="price-inline">від 5 000 грн/міс</span><div class="arrow">→</div></div>
+    <div class="service-row"><div class="service-row-num">6</div><div><h3>Аналітика та growth hacking</h3><p>Метрики, A/B тести, воронки та звіти — знаємо що працює і масштабуємо саме це.</p></div><span class="price-inline">від 7 000 грн/міс</span><div class="arrow">→</div></div>
+  </div></div></section>
+
+  <!-- БЛОК 3: CTA -->
+  <section class="cta-section"><div class="cta-bg-arc"></div><div class="container cta-content"><p class="section-label reveal">Готові почати?</p><h2 class="reveal reveal-delay-1">Опишіть задачу —<br/>ми запропонуємо <em style="color:var(--bronze-lt);font-style:italic">маршрут</em></h2><p class="reveal reveal-delay-2">Після першої розмови ви отримаєте розуміння інструментів, термінів і формату співпраці.</p><div class="cta-actions reveal reveal-delay-3"><a class="btn btn-bronze" href="/contact">Запитати консультацію</a><a class="btn btn-ghost" href="/projects" style="color:var(--ivory);border-color:rgba(247,244,239,.25)">Дивитися кейси</a></div></div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-divider"></div>
+  <div class="footer-wordmark" aria-hidden="true">DemandRise</div>
+
+  <div class="container">
+    <div class="footer-body">
+
+      <!-- CTA COLUMN -->
+      <div class="footer-cta-col">
+        <div class="footer-logo-mark">
+          <svg class="footer-logo-svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="DemandRise логотип">
+            <rect width="44" height="44" rx="10" fill="rgba(247,244,239,0.07)"/>
+            <path d="M22 8 L36 30 H8 Z" fill="none" stroke="#B8864E" stroke-width="1.4" stroke-linejoin="round"/>
+            <path d="M22 16 L30 30 H14 Z" fill="rgba(184,134,78,0.18)" stroke="none"/>
+            <circle cx="22" cy="8" r="2" fill="#D4A76A"/>
+            <line x1="14" y1="34" x2="30" y2="34" stroke="rgba(247,244,239,0.15)" stroke-width="1"/>
+            <path d="M18 38 H26" stroke="#B8864E" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span class="footer-logo-name">DemandRise</span>
+        </div>
+        <p class="footer-cta-tagline">Готові зробити<br/><em>наступний крок?</em></p>
+        <p class="footer-cta-desc">Перша консультація — безкоштовно. Розповімо, які інструменти дадуть результат саме у вашому бізнесі.</p>
+        <a class="footer-cta-btn" href="/contact">Написати нам →</a>
+        <div class="footer-cta-contacts">
+          <a href="tel:+380442345678">+380 44 234 5678</a>
+          <a href="mailto:support@DemandRise.site">support@DemandRise.site</a>
+        </div>
+      </div>
+
+      <!-- SERVICES COLUMN -->
+      <div class="footer-nav-col" style="padding-left:48px">
+        <h4>Послуги</h4>
+        <ul>
+          <li><a href="/services">AI автоматизація бізнесу</a></li>
+          <li><a href="/services">SMM та просування</a></li>
+          <li><a href="/services">SEO та просування сайтів</a></li>
+          <li><a href="/services">Розробка бренду</a></li>
+          <li><a href="/services">AI-контент та копірайтинг</a></li>
+          <li><a href="/services">Аналітика та growth hacking</a></li>
+        </ul>
+      </div>
+
+      <!-- COMPANY COLUMN -->
+      <div class="footer-nav-col" style="padding-left:40px">
+        <h4>Компанія</h4>
+        <ul>
+          <li><a href="/about">Про нас</a></li>
+          <li><a href="/projects">Кейси</a></li>
+          <li><a href="/about#team">Команда</a></li>
+          <li><a href="/#process">Процес</a></li>
+          <li><a href="/contact">Контакти</a></li>
+        </ul>
+        <div style="margin-top:32px">
+          <p style="font-family:var(--font-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,244,239,.2);margin-bottom:8px">Режим роботи</p>
+          <p style="font-size:.8rem;color:rgba(247,244,239,.4);line-height:1.6">Пн–Пт: 09:00–19:00<br/>Сб: за домовленістю</p>
+        </div>
+      </div>
+
+      <!-- CONTACTS COLUMN -->
+      <div class="footer-contacts-col">
+        <h4>Знайдіть нас</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">☎</div>
+          <div class="footer-contact-text">
+            <a href="tel:+380442345678">+380 44 234 5678</a>
+            <small>Дзвінки та Viber</small>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">@</div>
+          <div class="footer-contact-text">
+            <a href="mailto:support@DemandRise.site">support@DemandRise.site</a>
+            <small>Email для запитів</small>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">⌖</div>
+          <div class="footer-contact-text">
+            <span>ФОП Борова Юлія</span>
+            <small>Хмельницька обл., Малі Пузирки</small>
+          </div>
+        </div>
+
+      </div>
+
+    </div><!-- /footer-body -->
+
+    <div class="footer-bottom-bar">
+      <p class="footer-bottom-copy">© 2025 <span>DemandRise Agency</span> · Усі права захищені · <span>2023–2025</span></p>
+      <nav class="footer-legal-links" aria-label="Юридична навігація">
+        <a href="/privacy-policy">Конфіденційність</a>
+        <a href="/terms-and-conditions">Умови</a>
+        <a href="/cookie-policy">Cookies</a>
+        <a href="/disclaimer">Відмова</a>
+      </nav>
+      <button class="footer-btt back-to-top" aria-label="Вгору">↑</button>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
