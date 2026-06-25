@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+<defs>
+  <linearGradient id="sb-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#2B1810"/><stop offset="55%" stop-color="#34200F"/><stop offset="100%" stop-color="#1A1714"/>
+  </linearGradient>
+  <linearGradient id="sb-acc" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#FF7A45"/><stop offset="100%" stop-color="#FFC542"/>
+  </linearGradient>
+</defs>
+<rect width="640" height="480" fill="url(#sb-bg)"/>
+<ellipse cx="180" cy="160" rx="240" ry="190" fill="rgba(255,122,69,0.10)"/>
+
+<!-- palette swatches -->
+<rect x="60" y="60" width="74" height="74" rx="12" fill="url(#sb-acc)"/>
+<rect x="146" y="60" width="74" height="74" rx="12" fill="#2C2318"/>
+<rect x="232" y="60" width="74" height="74" rx="12" fill="#F7F4EF"/>
+<rect x="318" y="60" width="74" height="74" rx="12" fill="rgba(255,122,69,0.2)" stroke="rgba(255,122,69,0.4)" stroke-width="1"/>
+
+<!-- logo mark big -->
+<rect x="60" y="160" width="280" height="170" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,122,69,0.3)" stroke-width="1.5"/>
+<polygon points="200,195 222,235 178,235" fill="none" stroke="url(#sb-acc)" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="200,208 213,230 187,230" fill="rgba(255,122,69,0.3)"/>
+<circle cx="200" cy="195" r="4" fill="#FFC542"/>
+<text x="200" y="270" font-family="Georgia,serif" font-size="26" fill="rgba(247,244,239,0.9)" text-anchor="middle">Brand</text>
+<text x="200" y="295" font-family="monospace" font-size="10" fill="rgba(255,197,66,0.7)" text-anchor="middle" letter-spacing="3">IDENTITY SYSTEM</text>
+
+<!-- type sample -->
+<rect x="360" y="160" width="220" height="170" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="380" y="200" font-family="Georgia,serif" font-size="32" fill="rgba(247,244,239,0.85)">Aa Bb</text>
+<text x="380" y="230" font-family="monospace" font-size="14" fill="rgba(247,244,239,0.5)" letter-spacing="1">MONO 123</text>
+<line x1="380" y1="250" x2="560" y2="250" stroke="rgba(255,122,69,0.3)" stroke-width="1"/>
+<text x="380" y="275" font-size="12" fill="rgba(247,244,239,0.35)">Body text regular weight</text>
+<text x="380" y="296" font-family="Georgia,serif" font-size="13" fill="rgba(255,122,69,0.6)" font-style="italic">Italic accent style</text>
+<text x="380" y="316" font-family="monospace" font-size="10" fill="rgba(247,244,239,0.25)" letter-spacing="0.5">UPPERCASE LABEL</text>
+</svg>

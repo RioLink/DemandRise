@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+<defs>
+  <linearGradient id="ss-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1A0F23"/><stop offset="55%" stop-color="#2A1530"/><stop offset="100%" stop-color="#1A1714"/>
+  </linearGradient>
+  <linearGradient id="ss-acc" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#FF5C8A"/><stop offset="100%" stop-color="#FFB23E"/>
+  </linearGradient>
+</defs>
+<rect width="640" height="480" fill="url(#ss-bg)"/>
+<ellipse cx="180" cy="160" rx="240" ry="190" fill="rgba(255,92,138,0.10)"/>
+
+<!-- 3 phone stack -->
+<rect x="370" y="60" width="140" height="260" rx="20" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1.2" transform="rotate(-6 440 190)"/>
+<rect x="420" y="50" width="150" height="280" rx="22" fill="rgba(255,255,255,0.06)" stroke="rgba(255,178,62,0.35)" stroke-width="1.5"/>
+<rect x="432" y="66" width="126" height="250" rx="12" fill="rgba(26,15,35,0.85)"/>
+<rect x="478" y="56" width="56" height="9" rx="4" fill="rgba(0,0,0,0.5)"/>
+<!-- post grid in phone -->
+<rect x="442" y="80" width="50" height="50" rx="5" fill="url(#ss-acc)" opacity="0.5"/>
+<rect x="498" y="80" width="48" height="50" rx="5" fill="rgba(255,92,138,0.22)"/>
+<rect x="442" y="136" width="50" height="50" rx="5" fill="rgba(255,178,62,0.25)"/>
+<rect x="498" y="136" width="48" height="50" rx="5" fill="url(#ss-acc)" opacity="0.4"/>
+<rect x="442" y="192" width="104" height="50" rx="5" fill="rgba(255,92,138,0.18)"/>
+<!-- engagement icons floating -->
+<circle cx="600" cy="120" r="20" fill="rgba(255,92,138,0.25)" stroke="rgba(255,92,138,0.5)" stroke-width="1.2"/>
+<text x="600" y="126" font-size="16" text-anchor="middle">♥</text>
+<circle cx="595" cy="250" r="17" fill="rgba(255,178,62,0.2)" stroke="rgba(255,178,62,0.45)" stroke-width="1"/>
+<text x="595" y="255" font-size="13" text-anchor="middle">💬</text>
+
+<!-- Followers growth badge -->
+<rect x="50" y="60" width="190" height="92" rx="14" fill="rgba(255,92,138,0.10)" stroke="rgba(255,92,138,0.4)" stroke-width="1"/>
+<text x="68" y="88" font-family="monospace" font-size="10" fill="rgba(255,140,170,0.85)" letter-spacing="1.5">ПІДПИСНИКИ</text>
+<text x="68" y="124" font-family="Georgia,serif" font-size="34" fill="#FF8CAA" font-weight="300">+45K</text>
+
+<!-- mini bar chart -->
+<rect x="50" y="170" width="190" height="100" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+<text x="64" y="192" font-family="monospace" font-size="8" fill="rgba(255,178,62,0.7)" letter-spacing="1">ОХОПЛЕННЯ / МІС</text>
+<rect x="64" y="220" width="20" height="30" rx="3" fill="rgba(255,92,138,0.25)"/>
+<rect x="92" y="208" width="20" height="42" rx="3" fill="rgba(255,92,138,0.4)"/>
+<rect x="120" y="196" width="20" height="54" rx="3" fill="rgba(255,140,80,0.55)"/>
+<rect x="148" y="216" width="20" height="34" rx="3" fill="rgba(255,178,62,0.35)"/>
+<rect x="176" y="182" width="20" height="68" rx="3" fill="url(#ss-acc)"/>
+<rect x="204" y="190" width="20" height="60" rx="3" fill="rgba(255,178,62,0.7)"/>
+
+<!-- hashtag badge -->
+<rect x="50" y="290" width="190" height="66" rx="14" fill="rgba(255,178,62,0.06)" stroke="rgba(255,178,62,0.25)" stroke-width="1"/>
+<text x="66" y="316" font-family="monospace" font-size="10" fill="rgba(255,178,62,0.8)" letter-spacing="1.5">ЗАЛУЧЕННЯ</text>
+<text x="66" y="342" font-family="Georgia,serif" font-size="20" fill="#FFB23E">8.4% ER</text>
+</svg>

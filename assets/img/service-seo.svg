@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+<defs>
+  <linearGradient id="se-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#231526"/><stop offset="55%" stop-color="#2E1A33"/><stop offset="100%" stop-color="#1A1714"/>
+  </linearGradient>
+  <linearGradient id="se-acc" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#C77DFF"/><stop offset="100%" stop-color="#E0AAFF"/>
+  </linearGradient>
+</defs>
+<rect width="640" height="480" fill="url(#se-bg)"/>
+<ellipse cx="460" cy="160" rx="240" ry="190" fill="rgba(199,125,255,0.10)"/>
+
+<!-- magnifier over keyword cloud -->
+<g opacity="0.5" font-family="DM Sans, sans-serif" fill="rgba(247,244,239,0.4)">
+<text x="80" y="100" font-size="13">купити онлайн</text>
+<text x="280" y="80" font-size="16" fill="rgba(199,125,255,0.6)">ремонт квартир</text>
+<text x="100" y="160" font-size="11">доставка</text>
+<text x="320" y="150" font-size="14">послуги київ</text>
+<text x="60" y="220" font-size="10">ціна</text>
+<text x="240" y="230" font-size="12">відгуки</text>
+<text x="380" y="190" font-size="11">найкращий</text>
+</g>
+<circle cx="280" cy="170" r="70" fill="rgba(199,125,255,0.06)" stroke="url(#se-acc)" stroke-width="4"/>
+<line x1="328" y1="218" x2="380" y2="270" stroke="url(#se-acc)" stroke-width="6" stroke-linecap="round"/>
+
+<!-- ranking podium -->
+<rect x="40" y="300" width="80" height="100" rx="8" fill="rgba(199,125,255,0.10)" stroke="rgba(199,125,255,0.25)" stroke-width="1"/>
+<text x="80" y="330" font-family="Georgia,serif" font-size="22" fill="rgba(199,125,255,0.5)" text-anchor="middle">#3</text>
+<rect x="130" y="270" width="80" height="130" rx="8" fill="rgba(199,125,255,0.18)" stroke="rgba(199,125,255,0.4)" stroke-width="1.2"/>
+<text x="170" y="300" font-family="Georgia,serif" font-size="26" fill="rgba(199,125,255,0.8)" text-anchor="middle">#2</text>
+<rect x="220" y="250" width="80" height="150" rx="8" fill="url(#se-acc)" opacity="0.9"/>
+<text x="260" y="282" font-family="Georgia,serif" font-size="30" fill="#231526" text-anchor="middle" font-weight="700">#1</text>
+<circle cx="260" cy="240" r="14" fill="#E0AAFF"/>
+<text x="260" y="245" font-size="11" text-anchor="middle">★</text>
+
+<!-- traffic stat -->
+<rect x="350" y="300" width="230" height="100" rx="14" fill="rgba(199,125,255,0.08)" stroke="rgba(199,125,255,0.3)" stroke-width="1"/>
+<text x="368" y="328" font-family="monospace" font-size="10" fill="rgba(199,125,255,0.8)" letter-spacing="1.5">ОРГАНІЧНИЙ ТРАФІК</text>
+<text x="368" y="368" font-family="Georgia,serif" font-size="34" fill="#E0AAFF" font-weight="300">×4</text>
+<text x="420" y="368" font-family="DM Sans, sans-serif" font-size="13" fill="rgba(247,244,239,0.5)">за 6 місяців</text>
+</svg>

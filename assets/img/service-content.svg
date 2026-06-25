@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+<defs>
+  <linearGradient id="sc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0F1B2B"/><stop offset="55%" stop-color="#152941"/><stop offset="100%" stop-color="#1A1714"/>
+  </linearGradient>
+  <linearGradient id="sc-acc" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#4FA6FF"/><stop offset="100%" stop-color="#7CD6FF"/>
+  </linearGradient>
+</defs>
+<rect width="640" height="480" fill="url(#sc-bg)"/>
+<ellipse cx="460" cy="160" rx="240" ry="190" fill="rgba(79,166,255,0.10)"/>
+
+<!-- document/article mockup -->
+<rect x="60" y="60" width="240" height="300" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(79,166,255,0.25)" stroke-width="1.2"/>
+<rect x="84" y="86" width="140" height="14" rx="4" fill="rgba(247,244,239,0.5)"/>
+<rect x="84" y="112" width="190" height="7" rx="3" fill="rgba(247,244,239,0.18)"/>
+<rect x="84" y="128" width="170" height="7" rx="3" fill="rgba(247,244,239,0.18)"/>
+<rect x="84" y="144" width="190" height="7" rx="3" fill="rgba(247,244,239,0.12)"/>
+<rect x="84" y="170" width="192" height="60" rx="6" fill="url(#sc-acc)" opacity="0.12"/>
+<text x="180" y="204" font-size="22" text-anchor="middle">✍️</text>
+<rect x="84" y="246" width="190" height="7" rx="3" fill="rgba(247,244,239,0.16)"/>
+<rect x="84" y="262" width="160" height="7" rx="3" fill="rgba(247,244,239,0.16)"/>
+<rect x="84" y="278" width="190" height="7" rx="3" fill="rgba(247,244,239,0.1)"/>
+<rect x="84" y="310" width="100" height="26" rx="13" fill="url(#sc-acc)"/>
+<text x="134" y="327" font-family="monospace" font-size="9" fill="#0F1B2B" text-anchor="middle" font-weight="700">SEO READY</text>
+
+<!-- email cards stack -->
+<rect x="350" y="60" width="230" height="64" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(79,166,255,0.25)" stroke-width="1"/>
+<circle cx="374" cy="92" r="11" fill="url(#sc-acc)"/>
+<rect x="396" y="80" width="150" height="8" rx="4" fill="rgba(247,244,239,0.35)"/>
+<rect x="396" y="96" width="110" height="6" rx="3" fill="rgba(247,244,239,0.18)"/>
+
+<rect x="350" y="134" width="230" height="64" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(79,166,255,0.4)" stroke-width="1.2"/>
+<circle cx="374" cy="166" r="11" fill="rgba(79,166,255,0.4)"/>
+<rect x="396" y="154" width="150" height="8" rx="4" fill="rgba(247,244,239,0.5)"/>
+<rect x="396" y="170" width="110" height="6" rx="3" fill="rgba(124,214,255,0.5)"/>
+
+<!-- open rate ring -->
+<circle cx="465" cy="300" r="58" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="13"/>
+<circle cx="465" cy="300" r="58" fill="none" stroke="url(#sc-acc)" stroke-width="13" stroke-dasharray="153 213" stroke-linecap="round" transform="rotate(-90 465 300)"/>
+<text x="465" y="293" font-family="Georgia,serif" font-size="24" fill="#7CD6FF" text-anchor="middle">42%</text>
+<text x="465" y="312" font-family="monospace" font-size="8" fill="rgba(247,244,239,0.5)" text-anchor="middle" letter-spacing="1">OPEN RATE</text>
+</svg>
