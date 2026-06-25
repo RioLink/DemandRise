@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+<defs>
+  <linearGradient id="bgSty" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#231526"/>
+    <stop offset="55%" stop-color="#2E1A33"/>
+    <stop offset="100%" stop-color="#1A1714"/>
+  </linearGradient>
+  <linearGradient id="styAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#C77DFF"/>
+    <stop offset="100%" stop-color="#E0AAFF"/>
+  </linearGradient>
+</defs>
+<rect width="640" height="420" fill="url(#bgSty)"/>
+<ellipse cx="460" cy="150" rx="220" ry="170" fill="rgba(199,125,255,0.10)"/>
+
+<!-- Browser mockup -->
+<rect x="60" y="40" width="520" height="280" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+<rect x="60" y="40" width="520" height="34" rx="12" fill="rgba(255,255,255,0.06)"/>
+<circle cx="84" cy="57" r="5" fill="rgba(255,255,255,0.25)"/><circle cx="102" cy="57" r="5" fill="rgba(255,255,255,0.18)"/><circle cx="120" cy="57" r="5" fill="rgba(255,255,255,0.12)"/>
+<rect x="145" y="48" width="300" height="16" rx="8" fill="rgba(255,255,255,0.07)"/>
+<text x="295" y="59" font-family="monospace" font-size="9" fill="rgba(247,244,239,0.4)" text-anchor="middle">google.com/search?q=stylica+одяг</text>
+
+<!-- Result 1 highlighted -->
+<rect x="84" y="92" width="20" height="20" rx="4" fill="url(#styAccent)"/>
+<text x="94" y="106" font-family="monospace" font-size="11" fill="#231526" text-anchor="middle" font-weight="700">1</text>
+<text x="118" y="103" font-family="Georgia,serif" font-size="14" fill="rgba(247,244,239,0.92)">Stylica — модний одяг з доставкою по Україні</text>
+<text x="118" y="119" font-family="monospace" font-size="9" fill="rgba(199,125,255,0.7)">stylica.ua › catalog</text>
+
+<rect x="84" y="138" width="20" height="20" rx="4" fill="rgba(199,125,255,0.12)"/>
+<text x="94" y="152" font-family="monospace" font-size="10" fill="rgba(199,125,255,0.4)" text-anchor="middle">2</text>
+<text x="118" y="149" font-family="Georgia,serif" font-size="13" fill="rgba(247,244,239,0.4)">Магазин одягу — competitor-shop.com</text>
+
+<rect x="84" y="174" width="20" height="20" rx="4" fill="rgba(199,125,255,0.08)"/>
+<text x="94" y="188" font-family="monospace" font-size="10" fill="rgba(199,125,255,0.3)" text-anchor="middle">3</text>
+<text x="118" y="185" font-family="Georgia,serif" font-size="13" fill="rgba(247,244,239,0.3)">Fashion store — другий конкурент</text>
+
+<!-- ranking jump graphic -->
+<line x1="84" y1="220" x2="556" y2="220" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+<text x="84" y="240" font-family="monospace" font-size="9" fill="rgba(199,125,255,0.6)" letter-spacing="1">ПОЗИЦІЯ В GOOGLE ЗА 4 МІСЯЦІ</text>
+<circle cx="120" cy="280" r="6" fill="rgba(199,125,255,0.3)"/>
+<text x="120" y="300" font-family="monospace" font-size="9" fill="rgba(247,244,239,0.4)" text-anchor="middle">#47</text>
+<line x1="126" y1="280" x2="280" y2="270" stroke="rgba(199,125,255,0.4)" stroke-width="2" stroke-dasharray="3,4"/>
+<circle cx="286" cy="269" r="6" fill="rgba(199,125,255,0.5)"/>
+<text x="286" y="290" font-family="monospace" font-size="9" fill="rgba(247,244,239,0.5)" text-anchor="middle">#18</text>
+<line x1="292" y1="266" x2="440" y2="255" stroke="rgba(199,125,255,0.6)" stroke-width="2" stroke-dasharray="3,4"/>
+<circle cx="446" cy="255" r="8" fill="#E0AAFF"/>
+<text x="446" y="244" font-family="Georgia,serif" font-size="16" fill="#E0AAFF" text-anchor="middle" font-weight="600">ТОП-3</text>
+
+<!-- Labels -->
+<text x="60" y="368" font-family="Georgia,serif" font-size="24" fill="rgba(247,244,239,0.92)">Магазин одягу «Stylica»</text>
+<text x="60" y="393" font-family="monospace" font-size="11" fill="rgba(199,125,255,0.85)" letter-spacing="1.5">SEO · ТОП-3 GOOGLE ЗА 4 МІСЯЦІ</text>
+</svg>

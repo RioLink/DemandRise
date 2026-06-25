@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+<defs>
+  <linearGradient id="bgMail" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0F1B2B"/>
+    <stop offset="55%" stop-color="#152941"/>
+    <stop offset="100%" stop-color="#1A1714"/>
+  </linearGradient>
+  <linearGradient id="mailAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#4FA6FF"/>
+    <stop offset="100%" stop-color="#7CD6FF"/>
+  </linearGradient>
+</defs>
+<rect width="640" height="420" fill="url(#bgMail)"/>
+<ellipse cx="460" cy="120" rx="220" ry="160" fill="rgba(79,166,255,0.10)"/>
+
+<!-- Envelope -->
+<rect x="340" y="70" width="240" height="160" rx="14" fill="rgba(255,255,255,0.05)" stroke="rgba(79,166,255,0.4)" stroke-width="1.5"/>
+<polyline points="340,84 460,170 580,84" fill="none" stroke="rgba(79,166,255,0.5)" stroke-width="1.5"/>
+<!-- envelope flap shading -->
+<polygon points="340,84 460,170 460,84" fill="rgba(79,166,255,0.06)"/>
+<polygon points="580,84 460,170 460,84" fill="rgba(79,166,255,0.03)"/>
+<!-- notification badge -->
+<circle cx="566" cy="84" r="16" fill="url(#mailAccent)"/>
+<text x="566" y="89" font-family="monospace" font-size="11" fill="#0F1B2B" text-anchor="middle" font-weight="700">42%</text>
+
+<!-- Open rate ring chart -->
+<circle cx="460" cy="290" r="60" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="14"/>
+<circle cx="460" cy="290" r="60" fill="none" stroke="url(#mailAccent)" stroke-width="14" stroke-dasharray="158 220" stroke-linecap="round" transform="rotate(-90 460 290)"/>
+<text x="460" y="282" font-family="Georgia,serif" font-size="26" fill="#7CD6FF" text-anchor="middle">42%</text>
+<text x="460" y="302" font-family="monospace" font-size="9" fill="rgba(247,244,239,0.5)" text-anchor="middle" letter-spacing="1">OPEN RATE</text>
+
+<!-- Email list rows -->
+<rect x="40" y="60" width="240" height="44" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(79,166,255,0.2)" stroke-width="1"/>
+<circle cx="62" cy="82" r="10" fill="rgba(79,166,255,0.3)"/>
+<rect x="84" y="72" width="140" height="8" rx="4" fill="rgba(247,244,239,0.25)"/>
+<rect x="84" y="86" width="100" height="6" rx="3" fill="rgba(247,244,239,0.12)"/>
+
+<rect x="40" y="112" width="240" height="44" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(79,166,255,0.35)" stroke-width="1"/>
+<circle cx="62" cy="134" r="10" fill="url(#mailAccent)"/>
+<rect x="84" y="124" width="160" height="8" rx="4" fill="rgba(247,244,239,0.4)"/>
+<rect x="84" y="138" width="110" height="6" rx="3" fill="rgba(124,214,255,0.4)"/>
+
+<rect x="40" y="164" width="240" height="44" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(79,166,255,0.2)" stroke-width="1"/>
+<circle cx="62" cy="186" r="10" fill="rgba(79,166,255,0.3)"/>
+<rect x="84" y="176" width="130" height="8" rx="4" fill="rgba(247,244,239,0.25)"/>
+<rect x="84" y="190" width="90" height="6" rx="3" fill="rgba(247,244,239,0.12)"/>
+
+<!-- funnel badge -->
+<rect x="40" y="222" width="240" height="60" rx="10" fill="rgba(79,166,255,0.08)" stroke="rgba(79,166,255,0.3)" stroke-width="1"/>
+<text x="56" y="246" font-family="monospace" font-size="10" fill="rgba(124,214,255,0.85)" letter-spacing="1.5">EMAIL-ВОРОНКА</text>
+<text x="56" y="268" font-family="Georgia,serif" font-size="18" fill="#7CD6FF">Сегментація · Тригери</text>
+
+<!-- Labels -->
+<text x="40" y="368" font-family="Georgia,serif" font-size="22" fill="rgba(247,244,239,0.92)">«MobileHub» Online Store</text>
+<text x="40" y="393" font-family="monospace" font-size="11" fill="rgba(124,214,255,0.85)" letter-spacing="1.5">EMAIL-ВОРОНКА · 42% OPEN RATE</text>
+</svg>

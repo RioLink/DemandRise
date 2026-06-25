@@ -663,7 +663,7 @@ section{padding:120px 0}
 .project-tag{
   position:absolute;
   top:20px;left:20px;z-index:3;
-  background:rgba(253,252,250,.9);
+  background:rgba(253,252,250,.92);
   backdrop-filter:blur(8px);
   border-radius:var(--radius-xl);
   padding:6px 14px;
@@ -671,7 +671,15 @@ section{padding:120px 0}
   font-size:.7rem;letter-spacing:.08em;
   color:var(--charcoal);
   text-transform:uppercase;
+  box-shadow:0 4px 16px rgba(0,0,0,0.15);
+  transition:transform .3s ease;
 }
+.project-card:hover .project-tag{transform:translateY(-2px)}
+.project-card[data-cat="automation"] .project-tag{background:rgba(79,216,196,.92);color:#0F2027}
+.project-card[data-cat="smm"] .project-tag{background:rgba(255,140,170,.92);color:#2B0F18}
+.project-card[data-cat="seo"] .project-tag{background:rgba(224,170,255,.92);color:#231526}
+.project-card[data-cat="brand"] .project-tag{background:rgba(255,197,66,.92);color:#2B1810}
+.project-card[data-cat="content"] .project-tag{background:rgba(124,214,255,.92);color:#0F1B2B}
 /* Arch illustration patterns for project cards */
 .arch-pattern{
   width:100%;height:100%;

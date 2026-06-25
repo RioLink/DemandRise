@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+<defs>
+  <linearGradient id="bgGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1A0F23"/>
+    <stop offset="55%" stop-color="#2A1530"/>
+    <stop offset="100%" stop-color="#1A1714"/>
+  </linearGradient>
+  <linearGradient id="ggAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#FF5C8A"/>
+    <stop offset="100%" stop-color="#FFB23E"/>
+  </linearGradient>
+</defs>
+<rect width="640" height="420" fill="url(#bgGreen)"/>
+<ellipse cx="180" cy="140" rx="220" ry="170" fill="rgba(255,92,138,0.10)"/>
+
+<!-- Phone with vertical video -->
+<rect x="225" y="36" width="190" height="318" rx="26" fill="rgba(255,255,255,0.05)" stroke="rgba(255,178,62,0.3)" stroke-width="1.5"/>
+<rect x="237" y="52" width="166" height="288" rx="14" fill="rgba(20,12,26,0.9)"/>
+<rect x="287" y="42" width="66" height="10" rx="5" fill="rgba(0,0,0,0.5)"/>
+<!-- video bg gradient -->
+<rect x="237" y="52" width="166" height="288" rx="14" fill="url(#ggAccent)" opacity="0.18"/>
+<!-- play button -->
+<circle cx="320" cy="190" r="26" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+<polygon points="312,178 312,202 332,190" fill="#fff"/>
+<!-- view count -->
+<rect x="250" y="290" width="116" height="28" rx="14" fill="rgba(0,0,0,0.35)"/>
+<text x="262" y="309" font-family="monospace" font-size="10" fill="#fff">▶ 1.2M переглядів</text>
+<!-- side icons -->
+<circle cx="386" cy="230" r="16" fill="rgba(255,92,138,0.25)" stroke="rgba(255,92,138,0.5)" stroke-width="1"/>
+<text x="386" y="235" font-size="13" text-anchor="middle">♥</text>
+<circle cx="386" cy="265" r="16" fill="rgba(255,178,62,0.2)" stroke="rgba(255,178,62,0.45)" stroke-width="1"/>
+<text x="386" y="270" font-size="12" text-anchor="middle">💬</text>
+
+<!-- Stat badges -->
+<rect x="40" y="60" width="160" height="80" rx="14" fill="rgba(255,92,138,0.10)" stroke="rgba(255,92,138,0.4)" stroke-width="1"/>
+<text x="56" y="86" font-family="monospace" font-size="10" fill="rgba(255,140,170,0.85)" letter-spacing="1.5">ПЕРЕГЛЯДИ</text>
+<text x="56" y="118" font-family="Georgia,serif" font-size="30" fill="#FF8CAA" font-weight="300">1M+</text>
+
+<rect x="40" y="155" width="160" height="70" rx="14" fill="rgba(255,178,62,0.08)" stroke="rgba(255,178,62,0.3)" stroke-width="1"/>
+<text x="56" y="180" font-family="monospace" font-size="10" fill="rgba(255,178,62,0.8)" letter-spacing="1.5">ПЕРШИЙ МІСЯЦЬ</text>
+<text x="56" y="207" font-family="Georgia,serif" font-size="20" fill="#FFB23E">Viral hit</text>
+
+<!-- floating hashtags -->
+<text x="60" y="260" font-family="monospace" font-size="11" fill="rgba(255,92,138,0.5)">#greenbox</text>
+<text x="65" y="285" font-family="monospace" font-size="10" fill="rgba(255,178,62,0.4)">#ecotrend</text>
+<text x="50" y="310" font-family="monospace" font-size="9" fill="rgba(255,92,138,0.3)">#fyp</text>
+
+<!-- Labels -->
+<text x="40" y="368" font-family="Georgia,serif" font-size="24" fill="rgba(247,244,239,0.92)">Магазин «GreenBox»</text>
+<text x="40" y="393" font-family="monospace" font-size="11" fill="rgba(255,140,80,0.85)" letter-spacing="1.5">TIKTOK · 1M ПЕРЕГЛЯДІВ ЗА МІСЯЦЬ</text>
+</svg>
