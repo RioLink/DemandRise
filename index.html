@@ -21,7 +21,7 @@
     /* dot-grid background pattern */
     .diag-section::after{
       content:'';position:absolute;inset:0;
-      background-image:radial-gradient(circle,rgba(184,134,78,.22) 1.5px,transparent 1.5px);
+      background-image:radial-gradient(circle,rgba(28,58,19,.18) 1.5px,transparent 1.5px);
       background-size:32px 32px;
       pointer-events:none;
       mask-image:radial-gradient(ellipse 85% 85% at 50% 50%,#000 30%,transparent 100%);
@@ -31,13 +31,13 @@
     .diag-section::before{
       content:'';position:absolute;top:-180px;right:-180px;
       width:480px;height:480px;border-radius:50%;
-      border:1.5px solid rgba(184,134,78,.18);
+      border:1.5px solid rgba(28,58,19,.15);
       pointer-events:none;
     }
     .diag-bg-arc2{
       position:absolute;bottom:-120px;left:-120px;
       width:360px;height:360px;border-radius:50%;
-      border:1.5px solid rgba(140,168,130,.15);
+      border:1.5px solid rgba(28,58,19,.12);
       pointer-events:none;
     }
     .diag-heading{text-align:center;margin-bottom:36px;position:relative;z-index:1}
@@ -47,10 +47,10 @@
     @media(max-width:768px){.diag-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:480px){.diag-grid{grid-template-columns:1fr}}
     .diag-card{border:1px solid rgba(46,43,39,.10);border-radius:14px;padding:22px 20px;cursor:pointer;transition:all .3s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;background:#fff;box-shadow:0 2px 16px rgba(46,43,39,.06)}
-    .diag-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(184,134,78,.08),transparent);opacity:0;transition:opacity .3s}
-    .diag-card:hover{border-color:rgba(184,134,78,.4);transform:translateY(-4px);box-shadow:0 8px 32px rgba(184,134,78,.12)}
+    .diag-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(28,58,19,.08),transparent);opacity:0;transition:opacity .3s}
+    .diag-card:hover{border-color:rgba(28,58,19,.4);transform:translateY(-4px);box-shadow:0 8px 32px rgba(28,58,19,.12)}
     .diag-card:hover::before{opacity:1}
-    .diag-card.active{border-color:#B8864E;background:linear-gradient(135deg,rgba(184,134,78,.06),#fff);transform:translateY(-4px);box-shadow:0 8px 32px rgba(184,134,78,.15)}
+    .diag-card.active{border-color:#1C3A13;background:linear-gradient(135deg,rgba(28,58,19,.06),#fff);transform:translateY(-4px);box-shadow:0 8px 32px rgba(28,58,19,.15)}
     .diag-card.active::before{opacity:1}
     .diag-card.dimmed{opacity:.3}
     .diag-icon{font-size:22px;margin-bottom:10px;display:block}
@@ -58,7 +58,7 @@
     .diag-card p{font-size:.8rem;color:var(--warm-gray);line-height:1.55;margin:0}
     .diag-result{max-width:720px;margin:40px auto 0;text-align:center;opacity:0;transform:translateY(16px);transition:all .45s cubic-bezier(.4,0,.2,1);pointer-events:none;position:relative;z-index:1}
     .diag-result.visible{opacity:1;transform:none;pointer-events:auto}
-    .diag-result-box{border:1px solid rgba(184,134,78,.25);border-radius:16px;padding:36px 40px;background:#fff;box-shadow:0 4px 40px rgba(184,134,78,.12)}
+    .diag-result-box{border:1px solid rgba(28,58,19,.25);border-radius:16px;padding:36px 40px;background:#fff;box-shadow:0 4px 40px rgba(28,58,19,.12)}
     .diag-result-label{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.2em;color:var(--bronze);text-transform:uppercase;margin-bottom:12px}
     .diag-result-text{font-size:1.05rem;color:var(--charcoal);line-height:1.75;margin-bottom:24px}
     .diag-result-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
@@ -135,42 +135,42 @@
         <div class="diag-card" tabindex="0"
           data-label="Мало клієнтів і заявок"
           data-solution="Ваша проблема — слабка видимість і втрата лідів. Ми запустимо SEO, таргетинг і AI-воронку, яка обробляє заявки 24/7. Середній результат клієнтів — +200% заявок за 60 днів.">
-          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(184,134,78,0.12)"/><polyline points="5,20 10,13 15,16 20,8 23,10" stroke="#B8864E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><polyline points="19,8 23,8 23,12" stroke="#B8864E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="5" y1="23" x2="23" y2="23" stroke="rgba(184,134,78,0.35)" stroke-width="1"/></svg></span>
+          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(28,58,19,0.10)"/><polyline points="5,20 10,13 15,16 20,8 23,10" stroke="#1C3A13" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><polyline points="19,8 23,8 23,12" stroke="#1C3A13" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="5" y1="23" x2="23" y2="23" stroke="rgba(28,58,19,0.35)" stroke-width="1"/></svg></span>
           <h3>Мало клієнтів і заявок</h3>
           <p>Реклама є, але конверсія низька або клієнти не доходять</p>
         </div>
         <div class="diag-card" tabindex="0"
           data-label="Команда тоне в рутині"
           data-solution="Щодня йдуть години на однотипні відповіді, рахунки, записи та звіти. Ми автоматизуємо це: чат-бот, CRM-інтеграція, тригерні листи. Клієнти звільняють 15–20 годин на тиждень.">
-          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(184,134,78,0.12)"/><circle cx="14" cy="14" r="5.5" stroke="#B8864E" stroke-width="1.8"/><line x1="14" y1="5" x2="14" y2="8" stroke="#B8864E" stroke-width="1.8" stroke-linecap="round"/><line x1="14" y1="20" x2="14" y2="23" stroke="#B8864E" stroke-width="1.8" stroke-linecap="round"/><line x1="5" y1="14" x2="8" y2="14" stroke="#B8864E" stroke-width="1.8" stroke-linecap="round"/><line x1="20" y1="14" x2="23" y2="14" stroke="#B8864E" stroke-width="1.8" stroke-linecap="round"/><circle cx="14" cy="14" r="2" fill="#D4A76A"/></svg></span>
+          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(28,58,19,0.10)"/><circle cx="14" cy="14" r="5.5" stroke="#1C3A13" stroke-width="1.8"/><line x1="14" y1="5" x2="14" y2="8" stroke="#1C3A13" stroke-width="1.8" stroke-linecap="round"/><line x1="14" y1="20" x2="14" y2="23" stroke="#1C3A13" stroke-width="1.8" stroke-linecap="round"/><line x1="5" y1="14" x2="8" y2="14" stroke="#1C3A13" stroke-width="1.8" stroke-linecap="round"/><line x1="20" y1="14" x2="23" y2="14" stroke="#1C3A13" stroke-width="1.8" stroke-linecap="round"/><circle cx="14" cy="14" r="2" fill="#1C3A13"/></svg></span>
           <h3>Команда тоне в рутині</h3>
           <p>Ручні процеси крадуть час на реально важливі завдання</p>
         </div>
         <div class="diag-card" tabindex="0"
           data-label="Слабкий бренд і впізнаваність"
           data-solution="Ваш бізнес не відрізняється від конкурентів — і це відчувають клієнти. Ми розробимо позиціонування, айдентику та контент-стратегію, яка зробить вас першим вибором у ніші.">
-          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(184,134,78,0.12)"/><polygon points="14,5 17,11 23,11.5 18.5,16 20,22 14,19 8,22 9.5,16 5,11.5 11,11" stroke="#B8864E" stroke-width="1.8" stroke-linejoin="round" fill="rgba(184,134,78,0.15)"/></svg></span>
+          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(28,58,19,0.10)"/><polygon points="14,5 17,11 23,11.5 18.5,16 20,22 14,19 8,22 9.5,16 5,11.5 11,11" stroke="#1C3A13" stroke-width="1.8" stroke-linejoin="round" fill="rgba(28,58,19,0.12)"/></svg></span>
           <h3>Слабкий бренд і впізнаваність</h3>
           <p>Важко пояснити чому варто обрати саме вас</p>
         </div>
         <div class="diag-card" tabindex="0"
           data-label="Instagram не продає"
           data-solution="Підписники є, але продажів немає — класична проблема без стратегії. Ми перепакуємо контент, налаштуємо таргет і побудуємо воронку прямо в Instagram. Кейс: 45K живих підписників за 90 днів.">
-          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(184,134,78,0.12)"/><rect x="6" y="6" width="16" height="16" rx="5" stroke="#B8864E" stroke-width="1.8"/><circle cx="14" cy="14" r="3.5" stroke="#B8864E" stroke-width="1.6"/><circle cx="19.5" cy="8.5" r="1.2" fill="#D4A76A"/></svg></span>
+          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(28,58,19,0.10)"/><rect x="6" y="6" width="16" height="16" rx="5" stroke="#1C3A13" stroke-width="1.8"/><circle cx="14" cy="14" r="3.5" stroke="#1C3A13" stroke-width="1.6"/><circle cx="19.5" cy="8.5" r="1.2" fill="#1C3A13"/></svg></span>
           <h3>Instagram не продає</h3>
           <p>Є акаунт, є пости — але підписники не стають клієнтами</p>
         </div>
         <div class="diag-card" tabindex="0"
           data-label="Сайт не приносить трафік"
           data-solution="Якщо вас немає в Google — вас немає для більшості клієнтів. Ми проведемо SEO-аудит, виправимо критичні помилки і побудуємо органічний трафік, який зростає без зупинок. Результат — ×4 трафіку за 6 місяців.">
-          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(184,134,78,0.12)"/><circle cx="12.5" cy="12.5" r="5.5" stroke="#B8864E" stroke-width="1.8"/><line x1="16.5" y1="16.5" x2="22" y2="22" stroke="#B8864E" stroke-width="2" stroke-linecap="round"/><line x1="10" y1="12.5" x2="15" y2="12.5" stroke="#D4A76A" stroke-width="1.4" stroke-linecap="round"/><line x1="12.5" y1="10" x2="12.5" y2="15" stroke="#D4A76A" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(28,58,19,0.10)"/><circle cx="12.5" cy="12.5" r="5.5" stroke="#1C3A13" stroke-width="1.8"/><line x1="16.5" y1="16.5" x2="22" y2="22" stroke="#1C3A13" stroke-width="2" stroke-linecap="round"/><line x1="10" y1="12.5" x2="15" y2="12.5" stroke="#1C3A13" stroke-width="1.4" stroke-linecap="round"/><line x1="12.5" y1="10" x2="12.5" y2="15" stroke="#1C3A13" stroke-width="1.4" stroke-linecap="round"/></svg></span>
           <h3>Сайт не приносить трафік</h3>
           <p>Google вас не знаходить або позиції занадто низькі</p>
         </div>
         <div class="diag-card" tabindex="0"
           data-label="Не розумію де втрачаю гроші"
           data-solution="Без аналітики ви оптимізуєте наосліп. Ми налаштуємо відстеження всієї воронки, знайдемо де тікають гроші і побудуємо звітність, яка реально допомагає приймати рішення щодня.">
-          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(184,134,78,0.12)"/><rect x="5" y="17" width="5" height="6" rx="1.5" fill="rgba(184,134,78,0.4)" stroke="#B8864E" stroke-width="1.2"/><rect x="12" y="12" width="5" height="11" rx="1.5" fill="rgba(184,134,78,0.55)" stroke="#B8864E" stroke-width="1.2"/><rect x="19" y="7" width="5" height="16" rx="1.5" fill="#D4A76A" stroke="#B8864E" stroke-width="1.2" opacity="0.9"/><line x1="4" y1="24" x2="24" y2="24" stroke="rgba(184,134,78,0.4)" stroke-width="1"/></svg></span>
+          <span class="diag-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="rgba(28,58,19,0.10)"/><rect x="5" y="17" width="5" height="6" rx="1.5" fill="rgba(28,58,19,0.35)" stroke="#1C3A13" stroke-width="1.2"/><rect x="12" y="12" width="5" height="11" rx="1.5" fill="rgba(28,58,19,0.5)" stroke="#1C3A13" stroke-width="1.2"/><rect x="19" y="7" width="5" height="16" rx="1.5" fill="#1C3A13" stroke="#1C3A13" stroke-width="1.2" opacity="0.9"/><line x1="4" y1="24" x2="24" y2="24" stroke="rgba(28,58,19,0.4)" stroke-width="1"/></svg></span>
           <h3>Не розумію де втрачаю гроші</h3>
           <p>Гроші в маркетинг йдуть, але незрозуміло що працює</p>
         </div>
@@ -223,7 +223,7 @@
       <div>
         <div class="hero-label reveal"><div class="hero-label-dot"></div><span>Беремо нових клієнтів на 2026 рік</span></div>
         <h1 class="hero-title reveal reveal-delay-1">AI-автоматизація,<br/>яка <em>працює для бізнесу</em></h1>
-        <p class="hero-desc reveal reveal-delay-2">DemandRise автоматизує бізнес-процеси, просуває сайти, бренди та соцмережі за допомогою сучасних AI-інструментів. Від аудиту до реального результату — без порожніх обіцянок.</p>
+        <p class="hero-desc reveal reveal-delay-2">DemandRise автоматизує бізнес-процеси, просуває сайти, бренди та соцмережі за допомогою сучасних інструментів автоматизації. Від аудиту до реального результату — без порожніх обіцянок.</p>
         <div class="hero-actions reveal reveal-delay-3">
           <a class="btn btn-primary" href="/contact">Обговорити проєкт</a>
           <a class="btn btn-ghost" href="/projects">Дивитися кейси</a>
@@ -231,13 +231,13 @@
         <div class="hero-stats reveal reveal-delay-4">
           <div><div class="hero-stat-num">×4.2</div><div class="hero-stat-label">середній ROI</div></div>
           <div><div class="hero-stat-num" data-count="200" data-suffix="+">200+</div><div class="hero-stat-label">клієнтів</div></div>
-          <div><div class="hero-stat-num" data-count="30" data-suffix="+">30+</div><div class="hero-stat-label">AI-інструментів</div></div>
+          <div><div class="hero-stat-num" data-count="30" data-suffix="+">30+</div><div class="hero-stat-label">інструментів автоматизації</div></div>
           <div><div class="hero-stat-num" data-count="15" data-suffix="">15</div><div class="hero-stat-label">галузей</div></div>
         </div>
       </div>
       <div class="hero-right">
         <div class="hero-image-frame">
-          <div class="hero-arch-visual"><img class="content-image" src="assets/img/hero-ai.svg" alt="AI-автоматизація бізнесу"/></div>
+          <div class="hero-arch-visual"><img class="content-image" src="assets/img/hero-ai.svg" alt="Автоматизація бізнес-процесів"/></div>
         </div>
         <div class="hero-card-float"><p class="eyebrow">У роботі</p><div class="value">E-commerce «FashionFlow»</div><div class="sub">AI-воронка · +68% конверсія</div></div>
         <div class="hero-tag-float">Кейси 200+ клієнтів</div>
@@ -254,7 +254,7 @@
       <h2 class="display-lg reveal reveal-delay-1" style="color:var(--ivory);margin-top:16px">Досвід, що видно<br/><em style="color:var(--bronze-lt)">у цифрах клієнтів</em></h2>
       <div class="awards-grid">
         <div class="award-item reveal"><div class="award-num" data-count="200" data-suffix="+">200+</div><div class="award-label">клієнтів в портфоліо</div></div>
-        <div class="award-item reveal reveal-delay-1"><div class="award-num" data-count="30" data-suffix="+">30+</div><div class="award-label">AI-інструментів в арсеналі</div></div>
+        <div class="award-item reveal reveal-delay-1"><div class="award-num" data-count="30" data-suffix="+">30+</div><div class="award-label">інструментів автоматизації в арсеналі</div></div>
         <div class="award-item reveal reveal-delay-2"><div class="award-num" data-count="15">15</div><div class="award-label">галузей досвіду</div></div>
         <div class="award-item reveal reveal-delay-3"><div class="award-num">4.2×</div><div class="award-label">середній ROI по клієнтах</div></div>
       </div>
@@ -270,10 +270,10 @@
     <div class="container">
       <div class="section-header">
         <div><p class="section-label reveal">Наші послуги</p><h2 class="reveal reveal-delay-1">Автоматизуємо та просуваємо комплексно</h2></div>
-        <p class="reveal reveal-delay-2">Не продаємо окремі послуги без зв'язку з результатом. Стратегія, AI-інструменти, контент і аналітика працюють разом і дають вимірюваний ефект.</p>
+        <p class="reveal reveal-delay-2">Не продаємо окремі послуги без зв'язку з результатом. Стратегія, інструменти автоматизації, контент і аналітика працюють разом і дають вимірюваний ефект.</p>
       </div>
       <div class="services-grid">
-        <div class="service-card reveal"><div class="service-num">1</div><div class="service-icon">▣</div><h3>AI автоматизація бізнесу</h3><p>Чат-боти, CRM-інтеграції, автоворонки продажів та автоматизація рутини — бізнес продає 24/7 без додаткових людей.</p><a href="/services" class="service-link">Детальніше →</a></div>
+        <div class="service-card reveal"><div class="service-num">1</div><div class="service-icon">▣</div><h3>Автоматизація бізнес-процесів</h3><p>Чат-боти, CRM-інтеграції, автоворонки продажів та автоматизація рутини — бізнес продає 24/7 без додаткових людей.</p><a href="/services" class="service-link">Детальніше →</a></div>
         <div class="service-card reveal reveal-delay-1"><div class="service-num">2</div><div class="service-icon">◫</div><h3>SMM та просування в соцмережах</h3><p>Instagram, TikTok, Facebook — стратегія, контент-план, публікації, таргетована реклама та зростання живої аудиторії.</p><a href="/services" class="service-link">Детальніше →</a></div>
         <div class="service-card featured reveal reveal-delay-2"><div class="service-num" style="color:rgba(247,244,239,.3)">3</div><div class="service-icon">◌</div><h3>SEO та просування сайтів</h3><p>Органічний трафік, технічне SEO, контекстна реклама та таргетинг, що приводять платоспроможних клієнтів без зупинки.</p><a href="/services" class="service-link">Детальніше →</a></div>
         <div class="service-card reveal"><div class="service-num">4</div><div class="service-icon">▱</div><h3>Розробка бренду та айдентики</h3><p>Логотип, фірмовий стиль, brand book та позиціонування, що відрізняють вас від конкурентів і запам'ятовуються.</p><a href="/services" class="service-link">Детальніше →</a></div>
@@ -295,10 +295,10 @@
         <a href="/projects" class="btn btn-outline reveal reveal-delay-2">Переглянути всі →</a>
       </div>
       <div class="projects-grid home-projects-grid">
-        <article class="project-card" data-cat="automation"><div class="project-visual"><div class="project-visual-inner"><img class="project-image" src="assets/img/project-automation.svg" alt="AI автоматизація FashionFlow"/></div></div><div class="project-overlay"></div><div class="project-tag">Автоматизація</div><div class="project-info"><h3>FashionFlow E-commerce</h3><p>AI-воронка та чат-бот · +340% продажів</p></div></article>
-        <article class="project-card" data-cat="smm"><div class="project-visual"><div class="project-visual-inner"><img class="project-image" src="assets/img/project-smm.svg" alt="Instagram Craft Kitchen"/></div></div><div class="project-overlay"></div><div class="project-tag">SMM</div><div class="project-info"><h3>Ресторан «Craft Kitchen»</h3><p>Instagram · 0→45K підписників за 90 днів</p></div></article>
-        <article class="project-card" data-cat="seo"><div class="project-visual"><div class="project-visual-inner"><img class="project-image" src="assets/img/project-seo.svg" alt="SEO DataFlow IT"/></div></div><div class="project-overlay"></div><div class="project-tag">SEO</div><div class="project-info"><h3>IT-компанія «DataFlow»</h3><p>SEO · ×4 органічного трафіку за 6 місяців</p></div></article>
-        <article class="project-card" data-cat="brand"><div class="project-visual"><div class="project-visual-inner"><img class="project-image" src="assets/img/project-brand.svg" alt="Брендинг NovaTech"/></div></div><div class="project-overlay"></div><div class="project-tag">Брендинг</div><div class="project-info"><h3>Стартап «NovaTech»</h3><p>Бренд з нуля · від ідеї до впізнаваності</p></div></article>
+        <article class="project-card" data-cat="automation"><div class="project-visual"><div class="project-visual-inner"><img class="project-image" src="assets/img/cases/znimok-ekrana-2026-03-22-o-10.57.00-1920x1308.png" alt="Автоматизація FashionFlow"/></div></div><div class="project-overlay"></div><div class="project-tag">Автоматизація</div><div class="project-info"><h3>FashionFlow E-commerce</h3><p>Автоворонка та чат-бот · +340% продажів</p></div></article>
+        <article class="project-card" data-cat="smm"><div class="project-visual"><div class="project-visual-inner"><img class="project-image" src="assets/img/cases/getaways-scaled.jpg" alt="Instagram Craft Kitchen"/></div></div><div class="project-overlay"></div><div class="project-tag">SMM</div><div class="project-info"><h3>Ресторан «Craft Kitchen»</h3><p>Instagram · 0→45K підписників за 90 днів</p></div></article>
+        <article class="project-card" data-cat="seo"><div class="project-visual"><div class="project-visual-inner"><img class="project-image" src="assets/img/cases/walder-home-desktop.png" alt="SEO DataFlow IT"/></div></div><div class="project-overlay"></div><div class="project-tag">SEO</div><div class="project-info"><h3>IT-компанія «DataFlow»</h3><p>SEO · ×4 органічного трафіку за 6 місяців</p></div></article>
+        <article class="project-card" data-cat="brand"><div class="project-visual"><div class="project-visual-inner"><img class="project-image" src="assets/img/cases/xwalder-thematic-cover-no-text.png.pagespeed.ic.YAHi4Zmac1.webp" alt="Брендинг NovaTech"/></div></div><div class="project-overlay"></div><div class="project-tag">Брендинг</div><div class="project-info"><h3>Стартап «NovaTech»</h3><p>Бренд з нуля · від ідеї до впізнаваності</p></div></article>
       </div>
     </div>
   </section>
@@ -317,7 +317,7 @@
       <div class="process-timeline">
         <div class="process-step reveal"><div class="step-dot">1<div class="step-num">1</div></div><h3>Аудит та аналіз</h3><p>Вивчаємо бізнес, нішу, конкурентів і поточний стан просування. Знаходимо точки зростання й визначаємо, що дасть результат найшвидше при вашому бюджеті.</p></div>
         <div class="process-step reveal reveal-delay-1"><div class="step-dot">2<div class="step-num">2</div></div><h3>Стратегія</h3><p>Розробляємо конкретний план з інструментами, термінами й очікуваними показниками. Ви бачите не абстракцію, а реальний маршрут до цілі.</p></div>
-        <div class="process-step reveal reveal-delay-2"><div class="step-dot">3<div class="step-num">3</div></div><h3>Впровадження</h3><p>Налаштовуємо AI-інструменти, запускаємо кампанії, створюємо контент і автоматизуємо процеси. Все під ключ без зайвого навантаження на вашу команду.</p></div>
+        <div class="process-step reveal reveal-delay-2"><div class="step-dot">3<div class="step-num">3</div></div><h3>Впровадження</h3><p>Налаштовуємо інструменти автоматизації, запускаємо кампанії, створюємо контент і автоматизуємо процеси. Все під ключ без зайвого навантаження на вашу команду.</p></div>
         <div class="process-step reveal reveal-delay-3"><div class="step-dot">4<div class="step-num">4</div></div><h3>Масштабування</h3><p>Щомісячні звіти, A/B тести та оптимізація каналів, які дають результат. Ростемо разом із вашим бізнесом — поки конкуренти стоять на місці.</p></div>
       </div>
     </div>
@@ -347,7 +347,7 @@
         <p class="reveal reveal-delay-2">AI-стратеги, SMM-спеціалісти, технічні розробники та аналітики — кожен відповідає за свій напрям, але результат вимірюється для всього бізнесу клієнта.</p>
       </div>
       <div class="team-grid">
-        <div class="team-card reveal"><div class="team-photo"><div class="team-photo-inner"><img class="team-image" src="assets/img/team/image-20-1-400x400.jpg" alt="Юлія Борова, CEO"/></div></div><div class="team-info"><h3>Юлія Борова</h3><div class="team-role">Засновниця та CEO, AI-стратег</div><p>Відповідає за стратегію, якість рішень та розвиток агенції. Поєднує бізнес-мислення з глибоким розумінням AI-інструментів та цифрового маркетингу.</p></div></div>
+        <div class="team-card reveal"><div class="team-photo"><div class="team-photo-inner"><img class="team-image" src="assets/img/team/image-20-1-400x400.jpg" alt="Юлія Борова, CEO"/></div></div><div class="team-info"><h3>Юлія Борова</h3><div class="team-role">Засновниця та CEO, AI-стратег</div><p>Відповідає за стратегію, якість рішень та розвиток агенції. Поєднує бізнес-мислення з глибоким розумінням інструментів автоматизації та цифрового маркетингу.</p></div></div>
         <div class="team-card reveal reveal-delay-1"><div class="team-photo"><div class="team-photo-inner"><img class="team-image" src="assets/img/team/image-17-1-400x400.jpg" alt="Максим Яценко"/></div></div><div class="team-info"><h3>Максим Яценко</h3><div class="team-role">Керівник відділу AI-автоматизації</div><p>Розробляє чат-ботів, автоворонки та CRM-інтеграції. Перетворює складні бізнес-процеси на прості системи, що працюють 24/7.</p></div></div>
         <div class="team-card reveal reveal-delay-2"><div class="team-photo"><div class="team-photo-inner"><img class="team-image" src="assets/img/team/image-19-1-400x400.jpg" alt="Діана Мороз"/></div></div><div class="team-info"><h3>Діана Мороз</h3><div class="team-role">Head of SMM та просування брендів</div><p>Будує Instagram та TikTok акаунти з нуля. Розробляє контент-стратегії, що перетворюють охоплення на реальних клієнтів.</p></div></div>
         <div class="team-card reveal reveal-delay-3"><div class="team-photo"><div class="team-photo-inner"><img class="team-image" src="assets/img/team/image-15-400x400.jpg" alt="Андрій Федоренко"/></div></div><div class="team-info"><h3>Андрій Федоренко</h3><div class="team-role">Технічний директор, SEO & Analytics</div><p>Відповідає за SEO, технічний аудит та аналітику. Знаходить точки зростання там, де інші бачать лише цифри.</p></div></div>
@@ -363,7 +363,7 @@
     <div class="container cta-content">
       <p class="section-label reveal">Почнемо з розмови</p>
       <h2 class="reveal reveal-delay-1">Ваш бізнес може<br/>зростати <em style="color:var(--bronze-lt);font-style:italic">швидше</em></h2>
-      <p class="reveal reveal-delay-2">Опишіть задачу — ми підкажемо які AI-інструменти підійдуть саме вам, скільки часу займе результат і де можна виграти без великих витрат.</p>
+      <p class="reveal reveal-delay-2">Опишіть задачу — ми підкажемо які інструменти автоматизації підійдуть саме вам, скільки часу займе результат і де можна виграти без великих витрат.</p>
       <div class="cta-actions reveal reveal-delay-3">
         <a class="btn btn-bronze" href="/contact">Отримати консультацію</a>
         <a class="btn btn-ghost" href="/projects" style="color:var(--ivory);border-color:rgba(247,244,239,.25)">Кейси</a>
@@ -412,11 +412,11 @@
         <div class="footer-logo-mark">
           <svg class="footer-logo-svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="DemandRise логотип">
             <rect width="44" height="44" rx="10" fill="rgba(247,244,239,0.07)"/>
-            <path d="M22 8 L36 30 H8 Z" fill="none" stroke="#B8864E" stroke-width="1.4" stroke-linejoin="round"/>
-            <path d="M22 16 L30 30 H14 Z" fill="rgba(184,134,78,0.18)" stroke="none"/>
-            <circle cx="22" cy="8" r="2" fill="#D4A76A"/>
+            <path d="M22 8 L36 30 H8 Z" fill="none" stroke="#1C3A13" stroke-width="1.4" stroke-linejoin="round"/>
+            <path d="M22 16 L30 30 H14 Z" fill="rgba(28,58,19,0.18)" stroke="none"/>
+            <circle cx="22" cy="8" r="2" fill="#1C3A13"/>
             <line x1="14" y1="34" x2="30" y2="34" stroke="rgba(247,244,239,0.15)" stroke-width="1"/>
-            <path d="M18 38 H26" stroke="#B8864E" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M18 38 H26" stroke="#1C3A13" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
           <span class="footer-logo-name">DemandRise</span>
         </div>
@@ -433,7 +433,7 @@
       <div class="footer-nav-col" style="padding-left:48px">
         <h4>Послуги</h4>
         <ul>
-          <li><a href="/services">AI автоматизація бізнесу</a></li>
+          <li><a href="/services">Автоматизація бізнес-процесів</a></li>
           <li><a href="/services">SMM та просування</a></li>
           <li><a href="/services">SEO та просування сайтів</a></li>
           <li><a href="/services">Розробка бренду</a></li>
